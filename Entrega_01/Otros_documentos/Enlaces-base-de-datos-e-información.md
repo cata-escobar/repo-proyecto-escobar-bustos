@@ -39,3 +39,36 @@
 [ChartMasters Blur](https://chartmasters.org/artist/blur/), ChartMasters.
 
 [ChartMasters Oasis](https://chartmasters.org/artist/oasis), ChartMasters.
+
+## Vigencia
+
+[Spotify Oasis](https://open.spotify.com/intl-es/artist/2DaxqgrOhkeH0fpeiQq2f4?si=RFFMwaDjRfOjeXw7VXnQDQ), Spotify
+
+[Spotify Blur](https://open.spotify.com/intl-es/artist/7MhMgCo0Bl0Kukl93PZbYS?si=DVF7kK_eSxWqub6FBahWSw), Spotify
+ 
+[Canal de Youtube de Oasis](https://youtube.com/@oasisinetofficial?si=yG2SZ0SsLQDsWB83), Youtube
+
+[Canal de Youtube de Blur](https://youtube.com/@blur?si=-qMd6kqAs6vFBKwA), Youtube
+
+[Calculadora de Engagement de Instagram](https://www.modash.io/es/calculadora-de-engagement), Modash
+
+[Calculadora de Engagement de Tiktok](https://www.modash.io/es/tiktok-calculadora-de-engagement), Modash
+
+[@blurofficial](https://www.instagram.com/blurofficial), Instagram
+
+[@oasis](https://www.instagram.com/oasis), Tiktok
+
+[@blur](https://www.tiktok.com/@blur?lang=en), Tiktok 
+
+[@oasis](https://www.tiktok.com/@oasis), Tiktok
+
+[Soundchart Oasis](https://app.soundcharts.com/app/artist/oasis-1/overview), Soundcharts
+
+[Soundchart Blur](https://app.soundcharts.com/app/artist/blur/overview), Soundcharts
+
+## Impacto cultural
+
+
+[Oasis](https://www.tunefind.com/artist/oasis), Tunefind 
+
+[Blur](https://www.tunefind.com/artist/blur), Tunefind 
