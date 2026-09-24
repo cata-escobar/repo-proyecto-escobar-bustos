@@ -1,0 +1,31 @@
+﻿album_id;artista_proyecto;tipo_discografia;nombre_album;año_lanzamiento;UK_peak;semanas_chart_UK;US_peak;semanas_chart_US;certificacion_BPI
+BLU_001;Blur;Album;Leisure;1991;7;22;-;-;Oro
+BLU_002;Blur;Album;Modern Life Is Rubbish;1993;15;19;-;-;Oro
+BLU_003;Blur;Album;Parklife;1994;1;120;-;-;4xPlatino
+BLU_004;Blur;Compilation;The Special Collectors Edition;1994;-;-;43;1;N/A
+BLU_005;Blur;Album;The Great Escape;1995;1;56;150;1;3xPlatino
+BLU_006;Blur;Live album;Live at the Budokan;1996;77;1;-;-;N/A
+BLU_007;Blur;Live album;Planet Live!;1996;-;-;-;-;N/A
+BLU_008;Blur;Album;Blur;1997;1;75;61;37;Platino
+BLU_009;Blur;Live album;Live;1997;-;-;-;-;N/A
+BLU_010;Blur;Live remix album;Bustin' + Dronin';1998;100;1;56;1;N/A
+BLU_011;Blur;Album;13;1999;1;;80;5;Platino
+BLU_012;Blur;Compilation;10 Year Anniversary Box Set;1999;-;-;-;-;N/A
+BLU_013;Blur;Compilation;Blur: The Best Of;2000;3;62;186;1;N/A
+BLU_014;Blur;EP;B-Sides Gig EP;2001;-;-;-;-;N/A
+BLU_015;Blur;Album;Think Tank;2003;1;14;56;3;Oro
+BLU_016;Blur;Documentary compilation;Starshaped;2004;-;-;-;-;N/A
+BLU_017;Blur;Compilation;Midlife: A Begginers' Guide to Blur;2009;20;6;-;-;N/A
+BLU_018;Blur;Live album;All the People: Blur Live at Hyde Park 02 July 2009;2009;70;1;-;-;N/A
+BLU_019;Blur;Live album;All the People: Blur Live at Hyde Park 03 July 2009;2009;44;1;-;-;N/A
+BLU_020;Blur;Live broadcast;2009-06-28: Glastonbury Festival of Contemporary Performing Arts, UK;2009;-;-;-;-;N/A
+BLU_021;Blur;Compilation;Blur 21: The Box;2012;71;1;-;-;N/A
+BLU_022;Blur;Live album;Parklive;2012;91;1;-;-;N/A
+BLU_023;Blur;Live EP;Live From the Brits;2012;-;-;-;-;N/A
+BLU_024;Blur;Album;The Magic Whip;2015;1;14;12;2;Oro
+BLU_025;Blur;Live EP;Live at the BBC;2019;-;-;-;-;N/A
+BLU_026;Blur;Live album;BBC Radio 1 Broadcast John Peel Sessions 5th May 1997;2021;-;-;-;-;N/A
+BLU_027;Blur;Live broadcast;1994-06-26: Glastonbury Festival of Contemporary Performing Arts, UK;2021;-;-;-;-;N/A
+BLU_028;Blur;Album;The Ballad of Darren;2023;1;5;8;3;Plata
+BLU_029;Blur;Live album;Live in Sweden 1996;2023;-;-;-;-;N/A
+BLU_030;Blur;Live album;Live at Wembley Stadium;2024;6;1;-;-;N/A

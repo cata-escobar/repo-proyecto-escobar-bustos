@@ -1,0 +1,22 @@
+﻿album_id;artista_proyecto;tipo_discografia;nombre_album;año_lanzamiento;UK_peak;semanas_chart_UK;US_peak;semanas_chart_US;certificacion_BPI
+GOR_001;Gorillaz;EP;Tomorrow Comes Today;2000;-;-;-;-;N/A
+GOR_002;Gorillaz;Album;Gorillaz;2001;3;82;14;45;3xPlatino
+GOR_003;Gorillaz;Compilation;G Sides;2001;65;1;11;5;Plata
+GOR_004;Spacemonkeyz vs. Gorillaz;Remix album;Laika Come Home;2002;-;-;156;1;N/A
+GOR_005;Gorillaz;Album;Demon Days;2005;1;79;6;88;6xPlatino
+GOR_006;Gorillaz;EP;(Dare) (EP Series);2006;-;-;-;-;N/A
+GOR_007;Gorillaz;Live album;Demon Days: Live at the Manchester Opera House;2006;-;-;-;-;N/A
+GOR_008;Gorillaz;EP;Feel Good Inc. (EP Series);2007;-;-;-;-;N/A
+GOR_009;Gorillaz;Compilation;D-Sides;2007;63;1;10;2;N/A
+GOR_010;Gorillaz;Album;Plastic Beach;2010;2;31;2;35;Platino
+GOR_011;Gorillaz;Album;The Fall;2010;12;3;24;4;N/A
+GOR_012;Gorillaz;Live EP;iTunes Session;2010;-;-;154;1;N/A
+GOR_013;Gorillaz;Compilation;The Singles Collection 2001-2011;2011;42;26;-;-;Platino
+GOR_014;Gorillaz;Album;Humanz;2017;2;11;1;13;Oro
+GOR_015;Gorillaz;Album;The Now Now;2018;5;5;3;14;Plata
+GOR_016;Gorillaz;Album;Song Machine, Season One: Strange Timez;2020;2;4;3;4;Plata
+GOR_017;Gorillaz;Compilation;G Collection;2021;-;-;-;-;N/A
+GOR_018;Gorillaz;EP;Meanwhile EP;2021;-;-;-;-;N/A
+GOR_019;Gorillaz;Album;Cracker Island;2023;1;4;1;12;Plata
+GOR_020;Gorillaz;Live album;Demon Days: Live From the Apollo Theater;2025;91;1;25;1;N/A
+GOR_021;Gorillaz;Album;The Mountain;2026;1;5;3;6;Plata
