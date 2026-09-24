@@ -46,7 +46,7 @@ La construcción se realizó en las siguientes etapas:
 
 * Alcance temporal: La base comprende composiciones musicales lanzadas originalmente entre 1991 y 2023 y registra sus apariciones en obras o producciones culturales estrenadas o publicadas entre 1995 y 2026.
 
-* Alcance de los registros: La base contiene 146 canciones únicas y registra sus apariciones en 236 obras o producciones culturales únicas, correspondientes exclusivamente a películas, series y videojuegos.
+* Alcance de los registros: La base contiene 146 canciones únicas y registra sus apariciones en 235 obras o producciones culturales únicas, correspondientes exclusivamente a películas, series y videojuegos.
 
 * Alcance geográfico: La base incluye producciones originarias de 12 países, considerando también las coproducciones internacionales. Las producciones de Estados Unidos y Reino Unido representan la mayor parte de los registros.
 
