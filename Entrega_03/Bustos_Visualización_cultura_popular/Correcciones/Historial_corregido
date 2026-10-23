@@ -1,0 +1,102 @@
+# Documentación
+
+## Historial de procesos y decisiones
+
+El proceso de construcción y limpieza se realizó de manera progresiva, comenzando con una recopilación amplia de posibles apariciones y aplicando posteriormente distintos criterios de verificación y exclusión. El trabajo se realizó mediante una planilla de datos en Excel, complementada con búsquedas y revisión manual de las fuentes utilizadas para comprobar la información de cada registro.
+
+### 1. Búsqueda inicial
+
+La recopilación comenzó con búsquedas en Google sobre las apariciones de canciones de cada banda y proyecto musical en videojuegos, series y películas. Durante este proceso, TuneFind y Video Game Soundtracks Wiki aparecieron reiteradamente entre los resultados, por lo que se revisaron manualmente y se utilizaron como fuentes principales por la cantidad y actualidad de la información que ofrecían.
+
+Para las apariciones en películas y series, se utilizó TuneFind, que contaba con información sobre todos los artistas y proyectos incluidos en la investigación. Para los videojuegos, Video Game Soundtracks Wiki contenía información únicamente sobre Blur, Oasis, Gorillaz y Beady Eye.
+
+Para identificar apariciones en videojuegos de los demás proyectos (Noel Gallagher's High Flying Birds, Damon Albarn, Liam Gallagher, Noel Gallagher y The Good, the Bad & the Queen), se recurrió a otras páginas encontradas mediante Google, como artículos de Wikipedia, blogs y páginas dedicadas a canciones específicas que mencionaban los videojuegos en los que aparecían. Estas también fueron revisadas de manera manual y se conservaron al ofrecer justamente la información que estábamos buscando. 
+
+### 2. Recopilación e incorporación a Excel
+
+Los datos encontrados se transcribieron manualmente y tal cual como aparecían a una planilla de Excel. Para organizar la información, se crearon siete columnas: “artista”, “canción”, “aparición”, “tipo”, “título de la obra”, “temporada/episodio” y “título del episodio”. Esta estructura permitió reunir en una misma planilla la información sobre películas, series y videojuegos, aunque las fuentes consultadas presentaran los datos de distintas maneras.
+
+
+Los registros se agruparon por artista o proyecto musical, siguiendo el orden en que se realizó la búsqueda: Blur, Oasis, Gorillaz, Beady Eye, The Good, the Bad & the Queen, Liam Gallagher, Noel Gallagher's High Flying Birds, Noel Gallagher y Damon Albarn. Dentro de cada grupo, los registros se mantuvieron ordenados alfabéticamente por canción, siguiendo el orden en que figuraban en la fuente. 
+
+Cada aparición se registró en una fila independiente. Por lo tanto, si una misma canción aparecía en tres obras diferentes, se creaba una fila para cada una de ellas. 
+
+### 3. Estandarización
+En esta etapa se unificó la escritura de los nombres de las canciones, películas, series y videojuegos para mantener un formato consistente en toda la base de datos.
+Para ello, se revisaron los títulos registrados y se corrigieron diferencias de escritura, como el uso de mayúsculas y minúsculas o errores menores en los nombres. 
+
+Se utilizó Wikipedia y Spotify con las principales fuentes para estandarizar los nombres. 
+
+### 4. Reestructuración de las columnas
+
+En esta etapa, las columnas originales se reorganizaron de acuerdo con las variables definidas para la investigación: "artista_proyecto", "nombre_cancion", "aparicion", "tipo", "titulo_obra", "temporada_episodio", "pais_obra" y "lanzamiento_cancion".
+
+Asimismo, se eliminó la columna "título del episodio", ya que se optó por identificar los episodios únicamente mediante la variable "temporada_episodio", simplificando la base de datos.
+
+Por último, decidió unificar las columnas mediante el uso de nombres sin tildes ni espacios y separados por guiones bajos, para así facilitar la lectura y el procesamiento de los datos en Google Colab.
+
+### 5. Primera limpieza: verificación y corrección de los registros
+
+En esta etapa se revisó cada registro para comprobar que la canción existiera, que la obra estuviera correctamente identificada y que la aparición señalada pudiera respaldarse con información disponible.
+
+Para verificar y completar la información, se realizaron búsquedas en Google, cuyas consultaron derivaron principalmente a estas fuentes: 
+
+* MobyGames: se utilizó para revisar información sobre videojuegos y comprobar las canciones asociadas a cada título a través de los créditos y contenidos asociados dentro de pestaña.
+
+* FilmAffinity: se consultó para verificar el año de estreno y el país de origen de películas y series.
+
+* Wikipedia: se utilizó como fuente complementaria para identificar datos sobre las obras, como sus fechas y países de origen, especialmente cuando FilmAffinity no proporcionaba esta información. También permitió identificar algunas apariciones musicales en películas, series y videojuegos
+
+* Spotify: se utilizó para comprobar la existencia de las canciones y sus años de lanzamiento. Además, se revisaron álbumes oficiales asociados a películas y series para identificar posibles apariciones en sus bandas sonoras.
+
+* IMDb: ciertas búsquedas de Google nos dirigieron a esta página a la hora de revisar información sobre videojuegos y sus canciones asociadas.  
+
+* Reddit: se consultaron comunidades especializadas para encontrar información sobre apariciones difíciles de localizar en otras fuentes.
+
+Como ninguna fuente contenía toda la información necesaria, los datos se contrastaron entre distintas páginas cuando fue posible. Esto permitió corregir errores y completar los registros con información adicional.
+
+Finalmente, se eliminaron las apariciones que se identificaron como incorrectas y aquellas cuya existencia o relación con la obra señalada no pudo corroborarse. En estos últimos casos, se priorizó la confiabilidad de la base de datos por sobre la cantidad. 
+
+### 6. Segunda limpieza: delimitación del universo de productos culturales
+
+Durante la revisión de los registros, se identificaron apariciones musicales en formatos que no correspondían al alcance de la investigación, como reality shows y programas de farándula, entre ellos Love Island y The Tonight Show Starring Jimmy Fallon. También se encontraron canciones utilizadas en tráileres y adelantos promocionales de películas, series y videojuegos.
+
+Para delimitar la base al universo definido para el estudio, se eliminaron estas apariciones. En las películas y series, se incluyeron las canciones que aparecían en la producción o formaban parte de su banda sonora. En el caso de los videojuegos, se verificó que las canciones estuvieran efectivamente incorporadas al juego y no solo hubieran sido anunciadas o vinculadas promocionalmente con él. 
+
+Para comprobar estos casos, se realizaron búsquedas adicionales en Google y se consultaron especialmente comunidades especializadas de Reddit.
+
+### 7.  Reordenamiento alfabético
+
+Una vez finalizada la limpieza, los registros se ordenaron alfabéticamente por nombre de canción, manteniendo la agrupación por artista o proyecto musical.
+
+Finalmente, a partir de una observación de la profesora, se incorporó la columna "appearance_id", que asigna un identificador único a cada fila. Este campo permite distinguir y referenciar individualmente cada registro durante el análisis y la visualización de los datos.
+
+## Fuentes de datos utilizadas
+
+Las fuentes se identificaron mediante búsquedas en Google y se seleccionaron según la información que ofrecían y su utilidad para identificar apariciones musicales, verificar registros y completar los datos de la base.
+
+* Google: se utilizó para localizar las fuentes iniciales y buscar información complementaria. Se eligió como punto de partida porque permitía encontrar páginas especializadas y otras fuentes que mencionaban las apariciones de las canciones estudiadas.
+
+* TuneFind: se utilizó para identificar canciones presentes en películas y series. Se eligió porque contenía información sobre todos los artistas y proyectos incluidos en la investigación.
+
+* Video Game Soundtracks Wiki: se utilizó para identificar posibles apariciones de canciones en videojuegos. Fue útil especialmente para Blur, Oasis, Gorillaz y Beady Eye, cuyos registros se encontraron en esta página.
+
+* MobyGames e IMDb: se consultaron para verificar información sobre videojuegos específicos y contrastar los registros encontrados. Se utilizaron como fuentes complementarias durante la revisión de las apariciones.
+
+* FilmAffinity: se utilizó para consultar y contrastar el año de estreno y el país de origen de películas y series, datos necesarios para completar las variables correspondientes.
+
+* Wikipedia: se utilizó para complementar la información obtenida de otras fuentes, consultar datos sobre las obras y verificar la escritura de los títulos de las canciones mediante las discografías de los artistas. También permitió identificar posibles apariciones musicales que no se habían encontrado en las fuentes principales.
+
+* Spotify: se consultó para comprobar la existencia de las canciones y sus años de lanzamiento. Además, permitió revisar álbumes oficiales asociados a películas y series para buscar información sobre sus bandas sonoras.
+
+* Reddit: se consultaron comunidades especializadas para investigar apariciones difíciles de verificar, especialmente en videojuegos y sus distintas ediciones.
+
+## Preguntas que permite responder la base
+
+1. ¿Qué canciones tienen mayor “segunda vida” audiovisual?
+
+2.  ¿Qué épocas de cada carrera sigue reciclando la cultura popular?
+
+3. ¿Qué países concentran las producciones culturales en las que aparecen estas canciones?
+
+4. ¿Qué canciones aparecen de manera recurrente en distintas generaciones de productos culturales?

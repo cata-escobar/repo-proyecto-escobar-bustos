@@ -1,0 +1,87 @@
+## Fuente de los datos
+
+La base de datos es de elaboración propia y se construyó mediante la recopilación manual de información disponible en distintas páginas web. Las fuentes se encontraron principalmente a través de búsquedas en Google y se seleccionaron según la información que ofrecían y su utilidad para identificar apariciones musicales, verificar registros y completar los datos.
+
+* Google: se utilizó como buscador para localizar las fuentes iniciales y encontrar información complementaria sobre canciones y obras.
+
+* TuneFind: se utilizó para identificar apariciones de canciones en películas y series. Contenía información sobre todos los artistas y proyectos incluidos en la investigación.
+
+* Video Game Soundtracks Wiki: se utilizó para identificar posibles apariciones en videojuegos, principalmente de Blur, Oasis, Gorillaz y Beady Eye.
+
+* MobyGames e IMDb: se consultaron para contrastar información sobre videojuegos específicos y verificar los registros.
+
+* FilmAffinity: se utilizó para consultar y contrastar el año de estreno y el país de origen de películas y series.
+
+* Wikipedia: se utilizó para complementar información sobre canciones y obras, verificar la escritura de los títulos mediante las discografías de los artistas y consultar datos como fechas y países de origen. También permitió identificar posibles apariciones musicales.
+
+* Spotify: se consultó para comprobar la existencia de las canciones, consultar sus años de lanzamiento y revisar álbumes oficiales asociados a películas y series para buscar información sobre sus bandas sonoras.
+
+* Reddit: se consultaron comunidades especializadas para investigar apariciones difíciles de localizar, especialmente en videojuegos y sus distintas ediciones.
+
+Las fuentes cumplieron distintas funciones: algunas permitieron identificar posibles apariciones y otras ayudaron a verificar los registros o completar información faltante. Como ninguna contenía todos los datos necesarios, se recurrió a distintas páginas según las características de cada caso.
+
+### Metodología
+
+La base de datos se construyó mediante la recopilación manual de información disponible en distintas fuentes digitales. La búsqueda inicial se realizó en Google y permitió identificar TuneFind como fuente principal para las apariciones en películas y series, y Video Game Soundtracks Wiki para las apariciones en videojuegos de Blur, Oasis, Gorillaz y Beady Eye. Para los demás proyectos musicales, se recurrió a otras páginas encontradas mediante Google, como Wikipedia, blogs y sitios dedicados a canciones específicas.
+
+Los datos se transcribieron manualmente a una planilla de Excel, donde cada fila representaba una aparición específica de una canción en una película, serie o videojuego. Posteriormente, se estandarizaron los nombres de las canciones y las obras para unificar su escritura y evitar registros duplicados por diferencias en los títulos.
+
+A continuación, se reorganizaron las columnas según las variables definidas para la investigación. Se eliminó la columna independiente de título del episodio, se incorporaron las variables relativas al país de origen de la obra y al año de lanzamiento de la canción, y se estandarizaron los nombres de las columnas para facilitar el procesamiento de los datos en Google Colab.
+
+Luego, se realizaron dos etapas de limpieza. En la primera, se verificó la existencia de las canciones, la identificación de las obras y la relación entre ambas, utilizando distintas fuentes para corregir errores y completar información. Se eliminaron los registros incorrectos y aquellos cuya información no pudo corroborarse. En la segunda, se delimitó el universo de estudio mediante la exclusión de apariciones en reality shows, programas de farándula y materiales promocionales, como tráileres y adelantos. Se conservaron únicamente las apariciones en películas, series y videojuegos que cumplieran con los criterios definidos para la investigación.
+
+Finalmente, los registros se ordenaron alfabéticamente por nombre de canción, manteniendo la agrupación por artista o proyecto musical. Asimismo, se incorporó la variable “appearance_id”, que asigna un identificador único a cada fila y permite distinguir y referenciar individualmente cada registro.
+
+## Alcance de los datos
+
+* Universo:La base considera canciones de 9 artistas y proyectos musicales: Blur, Oasis, Gorillaz, Beady Eye, Noel Gallagher's High Flying Birds, Damon Albarn, Liam Gallagher, Noel Gallagher y The Good, the Bad & the Queen.
+
+* Alcance temporal: La base comprende canciones lanzadas originalmente entre 1991 y 2023 y registra sus apariciones en obras o producciones culturales estrenadas o publicadas entre 1995 y 2026.
+
+* Alcance de los registros:  La base contiene 411 registros de apariciones, correspondientes a 146 canciones únicas y 235 obras o producciones culturales únicas, que corresponden a películas, series y videojuegos.
+
+* Alcance geográfico: La base incluye producciones originarias de 11 países, concentrándose principalmente en Estados Unidos y Reino Unido. 
+
+* Unidad de observación: Cada registro corresponde a una aparición de una canción en una obra cultural. Por ello, una misma canción puede figurar en varios registros si aparece en diferentes películas, series o videojuegos. Del mismo modo, una misma obra puede registrar apariciones de distintas canciones.
+
+## Características de los datos
+
+La base de datos está estructurada a nivel de aparición individual, donde cada fila representa una canción de alguno de los artistas o proyectos considerados que aparece en una película, serie o videojuego. Una misma canción puede aparecer en múltiples obras y, en esos casos, cada aparición se registra como una observación independiente.
+
+Los datos están compuestos por variables identificadoras, descriptivas y temporales. El campo “appearance_id” corresponde a un identificador único asignado a cada registro. Respecto a “artista_proyecto” y “nombre_cancion” permiten identificar al artista o proyecto musical y la canción correspondiente.  En tanto, “tipo” clasifica la obra como película, serie o videojuego, mientras que “titulo_obra” registra su nombre. En el caso de las series, “temporada_episodio” permite especificar el capítulo en el que se registra la aparición.
+
+Las variables temporales permiten diferenciar entre el año en que se produjo la aparición y el año de lanzamiento original de la canción: “aparicion” registra el año de estreno, emisión o lanzamiento de la obra en la que aparece la canción, mientras que “lanzamiento_cancion” corresponde al año de lanzamiento original de la composición. Esta distinción permite observar la distancia temporal entre la publicación de una canción y su posterior utilización en otras producciones culturales.
+
+Por otra parte, “pais_obra” identifica el país de origen de la producción cultural. Cuando corresponde a una coproducción internacional, se registran los países involucrados. 
+
+En conjunto, estas variables permiten analizar la presencia de las canciones en distintos tipos de productos culturales, períodos y contextos geográficos, además de comparar la recurrencia de determinadas canciones dentro de la cultura popular.
+
+Los datos presentan principalmente variables categóricas (artista_proyecto, tipo, titulo_obra, pais_obra), variables temporales o numéricas (aparicion, lanzamiento_cancion) y una variable identificadora (appearance_id). La variable temporada_episodio corresponde a una variable descriptiva específica para las series y permanece vacía cuando el registro corresponde a una película o videojuego.
+
+## Otras observaciones sobre la base
+
+* La variable “temporada_episodio” presenta exactamente valores vacíos (NaN), los cuales coinciden de forma exacta con el total de películas y videojuegos de la base.
+
+* “appearance_id” es un identificador único de cada aparición y no identifica a la canción. Una misma canción puede tener varios “appearance_id”.
+
+* Cuando una canción aparece en distintas obras, cada aparición se mantiene como un registro independiente.
+
+* Las versiones o remixes se mantienen diferenciados cuando la fuente permite identificarlos.
+
+* El año de la canción corresponde a su lanzamiento original y no al año de la aparición en la obra.
+
+## Diccionario de datos
+
+| Variable              | Descripción                                                                                 | Tipo de dato          | Codificación / valores                                                                                                                                                        |
+| --------------------- | ------------------------------------------------------------------------------------------- | --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `appearance_id`       | Identificador único de cada aparición registrada en la base.                                | Identificador / texto | Código alfanumérico único para cada registro, compuesto por una abreviación del artista o proyecto y un número correlativo.                                                   |
+| `artista_proyecto`    | Nombre del artista o proyecto musical al que pertenece la canción.                          | Categórica / texto    | Oasis, Blur, Gorillaz, Beady Eye, The Good, the Bad & the Queen, Liam Gallagher, Noel Gallagher's High Flying Birds, Noel Gallagher o Damon Albarn.                           |
+| `nombre_cancion`      | Nombre de la canción que aparece en la obra cultural.                                       | Categórica / texto    | Título de la canción según su denominación registrada en las fuentes consultadas.                                                                                             |
+| `aparicion`           | Año de estreno, emisión o lanzamiento de la obra cultural en la que aparece la canción.     | Numérica / temporal   | Año expresado en formato de cuatro dígitos (AAAA).                                                                                                                            |
+| `tipo`                | Tipo de producción cultural en la que aparece la canción.                                   | Categórica            | `Pelicula`, `Serie` o `Videojuego`.                                                                                                                                           |
+| `titulo_obra`         | Título de la película, serie o videojuego en el que aparece la canción.                     | Categórica / texto    | Nombre oficial de la obra según las fuentes consultadas.                                                                                                                      |
+| `temporada_episodio`  | Identifica la temporada y el episodio específico de una serie en el que aparece la canción. | Texto / categórica    | Se registra cuando la aparición corresponde a una serie y existe información corroborable. Se deja vacío para películas y videojuegos.                                        |
+| `pais_obra`           | País o países de origen de la producción cultural.                                          | Categórica / texto    | País de origen de la obra. En el caso de coproducciones internacionales, se registran los países correspondientes.                                                            |
+| `lanzamiento_cancion` | Año de lanzamiento original de la canción o composición musical.                            | Numérica / temporal   | Año expresado en formato de cuatro dígitos (AAAA). Corresponde al lanzamiento original de la canción, independientemente del año de la obra en la que posteriormente aparece. |
+
+Se empleó IA para ayudar a construir la estructura del diccionario como una tabla. 
