@@ -38,10 +38,36 @@ También queríamos que los números siguieran una estética similar, pero sin s
 
 ## Wireframes
 
-Enlace al prototipo:
+Enlace al prototipo: [Wireframe de baja fidelidad](https://miro.com/app/board/uXjVESRpVHU=/)
 
 ### Justificación de estructura
 
+En cuanto a la estructura del wireframe, decidimos que fuera centrada para que fuera compatible con todo tipo de dispositivo, pensando en el usuario que la verá desde un celular y teniendo en cuenta que su pantalla es más angosta y estrecha. Esto permite una mejor integración del contenido.
 
-### Hipótesis y propuesta
+Por otro lado, decidimos que nuestra página sera de navegación vertical o *scrolling* para que el usuario pueda leer y consumir la historia como un relato sucesivo y continuo, hasta el final.
 
+En el encabezado de la página ubicaremos el logo del proyecto y un índice con accesos directos a entradas dentro de la página.
+
+Luego de la portada, donde presentamos el título y temática central de la propuesta, a través de un botón de comenzar, la historia inicia. Antes de comenzar con la lectura, decidimos incluir un reproudctor de música que esperamos contenga un mix de canciones de Damon Albarn y los hermanos Gallgher. Esto se presentará como una sugerencia ya que el ususario podrá decidir si quiere o no escuchar la playlist mientras lee.
+
+La primera sección de n uestra istoria es una breve introducción sobre la batalal del britpop, en texto. Esto estarpa acompañado de un carrusel con imágenes de la época sobre la rivalidad entre Blur y Oasis. Esperamos que el diseño de este carrusel sea similar al de una cámara digital-
+
+En la siguiente sección presentaremos a los protagonistas de nuestra historia, agrupando sus proyectos para el análisis del relato. Cada personaje contará con una tarjeta propia de datos esenciales sobre su persona y respectivos proyectos.
+
+En la siguiente sección el relato empezará a incluir las bases de datos creadas y analizadas para el proyecto. Inicialmente, irá la crónica y el análisis de la anatomía de la vigencia musical, donde se hablará de la discografía de cada proyecto y se establecerá la primera conlcusión del proyecto. Esta sección incluirá un carrusel y su respectivo gráfico, alternado con texto. Luego, irá la crónica y el análisis de la presencia en cultura popular, donde se hablará de las apariciones en productos de cultura popular, caracterizándose la naturaleza de estas apariciones. Esta sección incluirá un gráfico introductorio y un gráfico final, además de tres botones que desplegarán el análisis de los protagonistas en los tres tipos de productos culturales analozados (videojuegos, series y cine).
+
+Sobre la tercera crónica, como aún no se ha finalizado la producción de su base de datos, en la estructura del wireframe se dejó en blanco la sección correspondiente. Esperamos que luzca de manera similar a las demás secciones, incluyendo imágenes y gráficos, como mínimo.
+
+Por último, nuestro relato cerrará con una apreciación final del tema. Dado que nuestro objetivo nunca fue dar por ganador a alguno de los protagonistas, y para hacer más interactiva la experiencia del usuario, dispondremos de dos botones para que puedan votar por su favorito.
+
+EN el footer incluiremos los créditos de realización del proyecto.
+
+## Hipótesis
+
+A pesar de la fama mundial alcanzada por Oasis, dirigida por las figuras de Liam y Noel Gallagher, quien logró imponerse a largo plazo y consolidarse como un nombre dentro de la industria fue Damon Albarn, con la producción en paralelo de Blur y Gorillaz, que le han entregado vigencia hasta hoy.
+
+## Propuesta
+
+La historia parte en 1995, cuando Blur y Oasis fueron presentados como rivales por el liderazgo del Britpop. Tres décadas después, esa rivalidad es solo el punto de partida de trayectorias diferentes. Albarn amplió su carrera con Gorillaz, The Good, the Bad & the Queen y trabajos solistas, mientras Liam y Noel continuaron por separado tras Oasis mediante proyectos como Beady Eye y Noel Gallagher’s High Flying Birds, además de sus carreras solistas.
+
+A través de los datos buscamos reconstruir esta divergencia y determinar qué elementos del pasado explican su vigencia actual. Más que establecer un ganador de la Batalla del Britpop, buscamos mostrar qué ocurrió con sus protagonistas, cómo construyeron sus carreras durante las tres décadas posteriores y qué elementos los llevaron a consolidarse como íconos de la música inglesa.
