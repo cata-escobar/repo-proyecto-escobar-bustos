@@ -22,19 +22,21 @@ Finalmente, y con ayuda del identificador de color de Canva, nos decidimos por e
 
 #### Tipografía
 
-Para la selección de tipografía, decidimos utilizar una para los cuerpos de texto y otra para los títulos y subtítulos. Para esto, nos basamos en las imágenes de pósters y carátulas de álbumes que encontramos en Pinterest, buscando utilizar una tipografía que se asemejara a las que aparecían en ellas.
+Para la selección tipográfica, decidimos trabajar con dos fuentes: una destinada a los cuerpos de texto y otra para los títulos y subtítulos. Como referencia, nos inspiramos en los pósteres y las carátulas de álbumes que recopilamos en Pinterest, buscando tipografías que evocaran la estética visual presente en estos productos.  
 
-La tipografía que seleccionamos para el texto fue *29LT Makina*, la cual se asemeja a la utilizada en las imprentas inglesas del siglo XIX para la producción de periódicos. Decidimos utiliar esta porque creemos que representa la identidad cultural y visual del país de origen de las bandas.
+La tipografía que seleccionamos para el cuerpo fue *29LT Makina*, la cual se asemeja a la era utilizada en las imprentas inglesas del siglo XIX para la producción de periódicos. Su elección responde a la intención de incorporar un elemento visual que conectara con la tradición gráfica británica y, de esta manera, reforzara la identidad cultural del proyecto y el país de origen de ambas bandas.
 
-La tipografía de títulos, *Horizon*, la seleccionamos para que causara contraste con la otra tipografía, principalmente porque no tiene serifa y hace alusión a un estilo de escritura más moderno. Además, se asemejaba a las tipografías que vimos en los póster que encontramos en Pinterest.
+Por otro lado, para los títulos y subtítulos elegimos *Horizon*, una tipografía sin serifa que aporta un carácter más moderno y genera un contraste visual con la anterior. Además de equilibrar ambas propuestas, su estilo coincide con las referencias gráficas que encontramos en los pósteres recopilados en Pinterest, lo que nos permitió mantener una coherencia estética a lo largo del proyecto.
 
 #### Recursos gráficos
 
-Para la selección de los recursos gráficos, nos guiamos por la estética wqeb de los 90s y 2000, buscando que nuestra página tenga un aspecto "retro" y de inspiración "Y2K".
+Para la selección de los recursos gráficos, nos guiamos por la estética web de los 90s y 2000, buscando que nuestra página tenga un aspecto "retro" y "análogo". 
 
-Siguiendo esa idea, se nos ocurrió que los botones dentro de la página podían emular teclas de computador con los colores que elegimos para la paleta. Para ello, buscamos una imagen de tecla en Pinterest y la sometimos a un tratamiento de saturación y coloración usando las herramientas de Canva.
+Siguiendo esa idea, en primer lugar, se nos ocurrió que los botones dentro de la página podrían emular teclas de computador, generando un anclaje táctil y nostálgico. Para ello, buscamos una imagen de tecla en Pinterest y la sometimos a un tratamiento de saturación y coloración usando las herramientas de Canva.
 
-También queríamos que los números siguieran una estética similar, pero sin ser exactamente iguales a los botones. Se nos ocurrió que podíamos utilizar botones de teléfono público, los cuales asociamos a las clásicas casetas telefónicas de Londres, así que buscamos una imagen en Pinterest, la recortamos e individualizamos cada número para utilizarlos como íconos.
+En segundo lugar, decidimos que los íconos adoptaran un estilo de pixel art y estética retro a través de cursores clásicos, flechas de dirección, íconos de audio y reproducción. Asimismo, al momento de enumerar, se nos ocurrió que los íconos de números tuvieran el diseño de botones de télefono público, los cuales asociamos a las clásicas casetas telefónicas de Londres. Todos estos diseños fueron extraídos de Pinterest, los cuales sometimos a un tratamiento de eliminación de fondos y recorte. 
+
+Finalmente, como recursos adicionales, decidimos  incorpora comillas tipográficas y recortes de papel para aportar una textura gráfica analógica al momento de incluir citas y recuadros de texto breve. Estos elementos también fueron extraídos de Pinterest. 
 
 ## Wireframes
 
@@ -42,25 +44,25 @@ Enlace al prototipo: [Wireframe de baja fidelidad](https://miro.com/app/board/uX
 
 ### Justificación de estructura
 
-En cuanto a la estructura del wireframe, decidimos que fuera centrada para que fuera compatible con todo tipo de dispositivo, pensando en el usuario que la verá desde un celular y teniendo en cuenta que su pantalla es más angosta y estrecha. Esto permite una mejor integración del contenido.
+En cuanto a la estructura del wireframe, optamos por una disposición centrada, pensada para adaptarse a distintos dispositivos y, especialmente, a la visualización desde teléfonos celulares, cuyas pantallas son más estrechas. Esto permite organizar el contenido de manera clara y facilitar su lectura, independientemente del tamaño de la pantalla. 
 
-Por otro lado, decidimos que nuestra página sera de navegación vertical o *scrolling* para que el usuario pueda leer y consumir la historia como un relato sucesivo y continuo, hasta el final.
+Por otro lado, elegimos una navegación vertical o *scrolling*, con el propósito de que el usuario pueda recorrer la historia de manera progresiva y continua, siguiendo nuestra secuencia narrativa hasta llegar al desenlace. 
 
-En el encabezado de la página ubicaremos el logo del proyecto y un índice con accesos directos a entradas dentro de la página.
+En cuanto al encabezado de la página, optaremos por ubicar el logo del y un índice con accesos directos a entradas dentro de la página, lo que permitirá al usuario desplazarse por el contenido con mayor facilidad si así lo desea. 
 
-Luego de la portada, donde presentamos el título y temática central de la propuesta, a través de un botón de comenzar, la historia inicia. Antes de comenzar con la lectura, decidimos incluir un reproudctor de música que esperamos contenga un mix de canciones de Damon Albarn y los hermanos Gallgher. Esto se presentará como una sugerencia ya que el ususario podrá decidir si quiere o no escuchar la playlist mientras lee.
+En la portada, presentaremos el título y la temática central de la propuesta, junto a un botón de "comenzar" para dar inicio a la historia. Sin embargo, antes de que el usuario pueda iniciar con la lectura, incluiremos un reproudctor de música que esperamos contenga un mix de canciones de Damon Albarn y los hermanos Gallgher. Esto se presentará como una sugerencia, ya que el ususario podrá decidir si quiere o no escuchar la playlist mientras lee.
 
-La primera sección de n uestra istoria es una breve introducción sobre la batalal del britpop, en texto. Esto estarpa acompañado de un carrusel con imágenes de la época sobre la rivalidad entre Blur y Oasis. Esperamos que el diseño de este carrusel sea similar al de una cámara digital-
+La primera sección estará dedicada a una breve introducción sobre la batalla del Britpop. El contenido textual estará acompañado de un carrusel de imágenes de la época que retratarán la rivalidad entre Blur y Oasis. Para su presentación visual, buscamos recrear la estética de una cámara digital, de manera que el recurso no solo cumpla una función ilustrativa, sino que también contribuya a evocar el contexto histórico del relato.
 
-En la siguiente sección presentaremos a los protagonistas de nuestra historia, agrupando sus proyectos para el análisis del relato. Cada personaje contará con una tarjeta propia de datos esenciales sobre su persona y respectivos proyectos.
+En la siguiente sección, presentaremos a los protagonistas de la historia y agruparemos sus respectivos proyectos musicales para facilitar el análisis comparativo. Cada uno contará con una tarjeta individual que reunirá información esencial sobre su trayectoria y los proyectos asociados. 
 
-En la siguiente sección el relato empezará a incluir las bases de datos creadas y analizadas para el proyecto. Inicialmente, irá la crónica y el análisis de la anatomía de la vigencia musical, donde se hablará de la discografía de cada proyecto y se establecerá la primera conlcusión del proyecto. Esta sección incluirá un carrusel y su respectivo gráfico, alternado con texto. Luego, irá la crónica y el análisis de la presencia en cultura popular, donde se hablará de las apariciones en productos de cultura popular, caracterizándose la naturaleza de estas apariciones. Esta sección incluirá un gráfico introductorio y un gráfico final, además de tres botones que desplegarán el análisis de los protagonistas en los tres tipos de productos culturales analozados (videojuegos, series y cine).
+En las siguientes secciones, el relato incorporará progresivamente las bases de datos recopiladas y analizadas durante el desarrollo del proyecto. Primero, presentaremos la crónica y el análisis sobre la anatomía de la vigencia musical, donde abordaremos la discografía de cada protagonista y estableceremos una primera conclusión a partir de los resultados obtenidos. Esta sección combinará texto, un carrusel de imágenes y sus respectivos gráficos. Luego, irá la crónica y el análisis de la presencia en cultura popular, donde se hablará de las apariciones de nuestros protagonistas en diferentes productos de esta índole, caracterizándo además la naturaleza de estas apariciones. Esta sección incluirá un gráfico introductorio y un gráfico final, además de tres botones que desplegarán el análisis de los protagonistas en los tres tipos de productos culturales analizados (videojuegos, series y cine).
 
-Sobre la tercera crónica, como aún no se ha finalizado la producción de su base de datos, en la estructura del wireframe se dejó en blanco la sección correspondiente. Esperamos que luzca de manera similar a las demás secciones, incluyendo imágenes y gráficos, como mínimo.
+En cuanto a la tercera crónica, debido a que la base de datos correspondiente todavía se encuentra en proceso de elaboración, dejamos su espacio reservado en el wireframe. Esperamos que esta sección mantenga una línea visual coherente con las anteriores y que incorpore, al menos, imágenes y gráficos que permitan complementar el desarrollo del análisis.
 
-Por último, nuestro relato cerrará con una apreciación final del tema. Dado que nuestro objetivo nunca fue dar por ganador a alguno de los protagonistas, y para hacer más interactiva la experiencia del usuario, dispondremos de dos botones para que puedan votar por su favorito.
+Finalmente, el relato concluirá con una apreciación sobre los resultados y el tema abordado. Dado que nuestro propósito no es establecer un ganador definitivo entre los protagonistas, sino presentar sus distintas trayectorias y alcances, incorporaremos dos botones de votación para que los usuarios puedan elegir a su favorito. De esta manera, buscaremos generar una instancia de participación que complemente el cierre de la experiencia narrativa.
 
-EN el footer incluiremos los créditos de realización del proyecto.
+Por último, en el footer incluiremos los créditos correspondientes a la realización del proyecto.
 
 ## Hipótesis
 
