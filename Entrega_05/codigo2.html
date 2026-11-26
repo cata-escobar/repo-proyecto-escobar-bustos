@@ -970,9 +970,6 @@
     }
 
     /*================== FOTO RUPTURA ================== */
-    
-    /* CONTENEDOR */
-
     .ruptura-oasis {
        position: relative;
        width: 100%; 
@@ -984,8 +981,6 @@
 
        overflow: hidden;
     }
-
-    /* IMAGEN */
 
     .fragmento {
        position: absolute;
@@ -1000,8 +995,6 @@
             transform 1.4s cubic-bezier(.65, 0, .25, 1),
             opacity 1.4s ease;
     }
-
-    /* RECORTE DE LAS DOS MITADES */
 
     .fragmento-izquierdo {
        clip-path: polygon(
@@ -1035,14 +1028,10 @@
         );
     }
 
-    /* ESTADO INICIAL: FOTO UNIDA */
-
     .fragmento-izquierdo,
     .fragmento-derecho {
         transform: translateX(0);
     }
-
-    /* FOTO ROTA */
 
     .ruptura-oasis.rota .fragmento-izquierdo {
         transform: translateX(-35%) rotate(-5deg);
@@ -1051,8 +1040,6 @@
     .ruptura-oasis.rota .fragmento-derecho {
         transform: translateX(35%) rotate(5deg);
     }
-
-    /* GRIETA */
 
     .grieta-central {
         position: absolute;
@@ -1089,14 +1076,10 @@
         );
     }
 
-    /* APARICIÓN DE LA GRIETA */
-
     .ruptura-oasis.rota .grieta-central {
         transform: translateX(-50%) scaleY(1);
         opacity: 1;
     }
-
-    /* MÓVILES */
 
     @media (max-width: 600px) {
 
@@ -1114,8 +1097,6 @@
 
     }
 
-    /* RESPETAR PREFERENCIAS DE MOVIMIENTO */
-
     @media (prefers-reduced-motion: reduce) {
 
         .fragmento,
@@ -1123,13 +1104,6 @@
             transition: none;
         }
 
-    }
-
-    /* ================= COLLAGE SERIES ================= */
-    .collage-container {
-      padding: auto;
-      width: auto;
-      height: 820px;
     }
 
     /* ================= PODIO PAÍSES ================= */
@@ -2101,7 +2075,7 @@
           <p>Aunque Albarn vuelve a quedar por encima de los Gallagher cuando la música llega a la televisión, la ventaja es estrecha. En las series, sus proyectos acumulan 129 apariciones, frente a las 110 de los hermanos de Mánchester. Junto a los automóviles de <em>Top Gear</em>, las canciones de ambos bandos acompañaron a miles de adolescentes con <em>Skins</em>, <em>Shameless</em> y <em>My Mad Fat Diary</em>.</p>
         </div>
 
-        <div class="collage-container">
+        <div>
           <img src="visualizaciones/análisis_visualizaciones/imágenes/collage.jpeg">
         </div>
 
