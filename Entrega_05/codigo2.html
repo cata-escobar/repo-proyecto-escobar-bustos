@@ -969,6 +969,162 @@
       margin: 32px 0 24px;
     }
 
+    /*================== FOTO RUPTURA ================== */
+    
+    /* CONTENEDOR */
+
+    .ruptura-oasis {
+        position: relative;
+        width: 100%;
+       max-width: 900px;
+       margin: auto;
+
+       aspect-ratio: 16 / 9;
+
+       overflow: hidden;
+    }
+
+    /* IMAGEN */
+
+    .fragmento {
+       position: absolute;
+        inset: 0;
+
+       width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+
+       transition:
+            transform 1.4s cubic-bezier(.65, 0, .25, 1),
+            opacity 1.4s ease;
+    }
+
+    /* RECORTE DE LAS DOS MITADES */
+
+    .fragmento-izquierdo {
+       clip-path: polygon(
+           0 0,
+            51% 0,
+            48% 12%,
+            52% 25%,
+           47% 39%,
+           52% 51%,
+           48% 65%,
+           53% 78%,
+           48% 90%,
+           50% 100%,
+           0 100%
+        );
+    }
+
+    .fragmento-derecho {
+        clip-path: polygon(
+           51% 0,
+           100% 0,
+            100% 100%,
+            50% 100%,
+            52% 90%,
+            47% 78%,
+            52% 65%,
+            48% 51%,
+            53% 39%,
+            47% 25%,
+            52% 12%
+        );
+    }
+
+    /* ESTADO INICIAL: FOTO UNIDA */
+
+    .fragmento-izquierdo,
+    .fragmento-derecho {
+        transform: translateX(0);
+    }
+
+    /* FOTO ROTA */
+
+    .ruptura-oasis.rota .fragmento-izquierdo {
+        transform: translateX(-35%) rotate(-5deg);
+    }
+
+    .ruptura-oasis.rota .fragmento-derecho {
+        transform: translateX(35%) rotate(5deg);
+    }
+
+    /* GRIETA */
+
+    .grieta-central {
+        position: absolute;
+
+        left: 50%;
+        top: 0;
+
+        width: 5px;
+        height: 100%;
+
+        background: black;
+
+        transform: translateX(-50%) scaleY(0);
+        transform-origin: top;
+
+        opacity: 0;
+
+        transition:
+            transform .5s ease,
+            opacity .3s ease;
+
+        clip-path: polygon(
+            50% 0,
+            100% 10%,
+            0 20%,
+            100% 30%,
+            0 40%,
+            100% 50%,
+            0 60%,
+            100% 70%,
+            0 80%,
+            100% 90%,
+            50% 100%
+        );
+    }
+
+    /* APARICIÓN DE LA GRIETA */
+
+    .ruptura-oasis.rota .grieta-central {
+        transform: translateX(-50%) scaleY(1);
+        opacity: 1;
+    }
+
+    /* MÓVILES */
+
+    @media (max-width: 600px) {
+
+        .ruptura-oasis {
+            aspect-ratio: 4 / 3;
+        }
+
+        .ruptura-oasis.rota .fragmento-izquierdo {
+            transform: translateX(-30%) rotate(-4deg);
+        }
+
+        .ruptura-oasis.rota .fragmento-derecho {
+            transform: translateX(30%) rotate(4deg);
+        }
+
+    }
+
+    /* RESPETAR PREFERENCIAS DE MOVIMIENTO */
+
+    @media (prefers-reduced-motion: reduce) {
+
+        .fragmento,
+        .grieta-central {
+            transition: none;
+        }
+
+    }
+
+
     /* ================= 8. LAYERED 3D TOUR CAROUSEL (WIREFRAME SECTION 5) ================= */
     .deck-carousel {
       position: relative;
@@ -1682,13 +1838,12 @@
         <div class="chart-plate" role="region" aria-label="Gráfico vigencia musical">
           <div class="chart-header">
             <div>
-              <div class="chart-kicker">Gráfico 01 · Vigencia discográfica (1991–2026)</div>
-              <h3 class="chart-title">Damon Albarn vs. los Gallagher: Vigencia discográfica a lo largo de los años</h3>
+              <h3 class="chart-title">Damon Albarn vs. los hermanos Gallagher: Vigencia discográfica a lo largo de los años</h3>
             </div>
             <div class="chart-controls" role="group" aria-label="Filtrar proyectos">
               <button type="button" class="filter-tab is-active" data-side-filter="all">Todos (9 proyectos)</button>
-              <button type="button" class="filter-tab" data-side-filter="albarn">Albarn · Londres</button>
-              <button type="button" class="filter-tab" data-side-filter="gallagher">Gallagher · Mánchester</button>
+              <button type="button" class="filter-tab" data-side-filter="albarn">Albarn</button>
+              <button type="button" class="filter-tab" data-side-filter="gallagher">Hermanos Gallagher</button>
             </div>
           </div>
 
@@ -1708,6 +1863,31 @@
 
           <p>Y hay algo todavía más revelador. En 2009, año que los Gallagher decidieron separarse porque ya no se soportaban, Blur lanzó al mercado cuatro discos, tres de los cuales eran grabaciones de shows en vivo que convocaron a miles de fanáticos. Y el año siguiente registra como el más productivo para Gorillaz, musicalmente hablando, con el lanzamiento exitoso de dos álbumes de estudio que han sido íconos de la banda, <em>Plastic Beach</em> y <em>The Fall</em>, y un disco que recolectó una década de singles.</p>
 
+        </div>
+
+        <!-- FOTO QUE SE ROMPE AL LLEGAR A ELLA -->
+
+        <div class="ruptura-oasis" id="rupturaOasis">
+
+          <!-- Mitad izquierda -->
+           <img
+               src="visualizaciones/análisis_visualizaciones/imágenes/ruptura.jpeg"
+               class="fragmento fragmento-izquierdo"
+               alt="Liam Gallagher"
+           >
+
+         <!-- Mitad derecha -->
+           <img
+               src="visualizaciones/análisis_visualizaciones/imágenes/ruptura.jpeg"
+               class="fragmento fragmento-derecho"
+               alt="Noel Gallagher"
+            >
+
+         <!-- Grieta central -->
+          <div class="grieta-central"></div>
+        </div>
+
+        <div class="reading-col">
           <p>Teniendo esto en la mira, cabe preguntarse: ¿Fue una coincidencia o fue que Damon decidió tomar las riendas de la industria al ver caer a su más grande rival? Mientras los Gallagher se dividían en un grupo tras otro sin lograr volúmenes de venta ni de producción masivos, Albarn fortaleció sus mejores caballos de batalla, con una de sus décadas más productivas.</p>
 
           <p>Nadie puede decir que los hermanos Gallagher no supieron jugar con su fama. Al día de hoy, siguen estando vigentes en el mundo mediático y han logrado penetrar profundamente en la cultura popular, con varios singles que alcanzaron el número uno y que se han convertido en himnos de las tres generaciones de jóvenes que siguieron a su formación. Pero haber ganado el sprint no les aseguró el primer lugar en la maratón. Porque la vigencia en la industria musical, a largo plazo, no la sostuvo la actitud de estrella de rock ni la confrontación mediática, sino que lo hizo la reinvención, la constancia productiva y una ética de trabajo que terminó volcando la balanza a favor de Damon Albarn.</p>
