@@ -717,6 +717,23 @@
       background: var(--navy);
     }
 
+    .avatar-side-box {
+      width: 110px;
+     height: 110px;
+     border: 3px solid var(--black);
+     overflow: hidden;
+     flex-shrink: 0;
+     background: var(--paper-alt);
+      box-shadow: 4px 4px 0 var(--black);
+    }
+
+    .avatar-side-box img,
+    .avatar-circle img {
+     width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
     .profile-name-bar {
       font-family: var(--font-display);
       font-weight: 900;
@@ -1561,48 +1578,53 @@
         </div>
 
         <div class="profiles-grid">
-          <!-- Left Card: Damon Albarn (1 circular portrait) -->
+         <!-- Tarjeta Izquierda: Damon Albarn -->
           <article class="profile-card profile-card--albarn">
-            <div class="avatars-row">
+           <div class="avatars-row">
               <div class="avatar-circle" aria-hidden="true">
-                <img src="visualizaciones/análisis_visualizaciones/imágenes/albarn1.jpeg">
+                <img src="visualizaciones/análisis_visualizaciones/imágenes/albarn1.jpeg" alt="Damon Albarn">
+             </div>
+              <!-- NUEVO DIV PARA IMAGEN AL LADO DEL CÍRCULO -->
+             <div class="avatar-side-box">
+               <img src="visualizaciones/análisis_visualizaciones/imágenes/firmaalbarn1.jpeg" alt="Firma y estética Damon Albarn">
               </div>
               <div>
                 <div class="profile-name-bar profile-name-bar--albarn">Damon Albarn</div>
-                <div style="font-size:0.8rem; color:var(--ink-muted); margin-top:6px;">
-                  Londres · Blur · Gorillaz · The Good the Bad &amp; the Queen · Solista
-                </div>
-              </div>
+               <div style="font-size:0.8rem; color:var(--ink-muted); margin-top:6px;">
+                 Londres · Blur · Gorillaz · The Good the Bad &amp; the Queen · Solista
+               </div>
+             </div>
             </div>
-
             <p style="margin:0; font-size:0.94rem;">
-              Mutación constante: del pop irónico londinense en Blur a la animación global de Gorillaz, colaboraciones africanas y proyectos solistas sin pausas prolongadas.
+             Mutación constante: del pop irónico londinense en Blur a la animación global de Gorillaz, colaboraciones africanas y proyectos solistas sin pausas prolongadas.
             </p>
-
           </article>
 
-          <!-- Right Card: Liam y Noel Gallagher (1 circular portrait) -->
-          <article class="profile-card profile-card--gallagher">
+         <!-- Tarjeta Derecha: Liam y Noel Gallagher -->
+           <article class="profile-card profile-card--gallagher">
             <div class="avatars-row">
               <div class="avatar-circle avatar-circle--navy" aria-hidden="true">
-                <!-- Gallagher Minimalist Portrait -->
-                <img src="visualizaciones/análisis_visualizaciones/imágenes/gallagher1.jpeg">
-              </div>
-
-              <div>
+                <img src="visualizaciones/análisis_visualizaciones/imágenes/gallagher1.jpeg" alt="Liam y Noel Gallagher">
+             </div>
+             <!-- NUEVO DIV PARA IMAGEN AL LADO DEL CÍRCULO -->
+              <div class="avatar-side-box">
+                <img src="visualizaciones/análisis_visualizaciones/imágenes/firmagallagher1.jpeg" alt="Firma y estética hermanos Gallagher">
+             </div>
+             <div>
                 <div class="profile-name-bar profile-name-bar--gallagher">Liam y Noel Gallagher</div>
                 <div style="font-size:0.8rem; color:var(--ink-muted); margin-top:6px;">
                   Mánchester · Oasis · Beady Eye · High Flying Birds · Carreras solistas
                 </div>
-              </div>
+             </div>
             </div>
 
-            <p style="margin:0; font-size:0.94rem;">
-              Minimalismo y frontalidad obrera: tras la ruptura de 2009 dividieron su camino en cuatro proyectos paralelos, manteniendo su hegemonía en los grandes estadios y giras.
-            </p>
-            </div>
+           <p style="margin:0; font-size:0.94rem;">
+             Minimalismo y frontalidad obrera: tras la ruptura de 2009 dividieron su camino en cuatro proyectos paralelos, manteniendo su hegemonía en los grandes estadios y giras.
+           </p>
           </article>
         </div>
+          </article>
+       </div>
       </div>
     </section>
 
