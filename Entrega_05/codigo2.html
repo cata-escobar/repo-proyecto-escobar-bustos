@@ -769,44 +769,52 @@
       display: block;
     }
 
-    /* ================= 6. WIDE CHRONICLE 1 CAROUSEL (WIREFRAME SECTION 3) ================= */
+    /* ================= 6. WIDE CHRONICLE 1 CAROUSEL (HORIZONTAL 8 IMÁGENES) ================= */
     .wide-carousel {
       position: relative;
-      margin: 36px 36px;
+      width: 100%;
+      max-height: 820px;
+      margin: 36px auto;
+      padding: 0 36px;
       background: var(--navy);
       border: 3px solid var(--black);
       box-shadow: 8px 8px 0 var(--black);
-      color: var(--white);
-    }
-
-    .wide-carousel-stage {
-      display: grid;
-      grid-template-columns: 1.15fr 0.85fr;
-      min-height: 320px;
-    }
-
-    @media (max-width: 820px) {
-      .wide-carousel-stage { grid-template-columns: 1fr; }
-    }
-
-    .wide-carousel-art {
-      position: relative;
-      background: var(--red);
-      border-right: 3px solid var(--black);
       overflow: hidden;
-      min-height: 260px;
     }
 
-    @media (max-width: 820px) {
-      .wide-carousel-art { border-right: none; border-bottom: 3px solid var(--black); }
+    .wide-carousel-viewport {
+      width: 100%;
+      max-height: 820px;
+      overflow: hidden;
+      border-left: 3px solid var(--black);
+      border-right: 3px solid var(--black);
+      background: var(--black);
     }
 
-    .wide-carousel-copy {
-      padding: 28px 56px 28px 28px;
+    .wide-carousel-track {
       display: flex;
-      flex-direction: column;
+      width: 100%;
+      max-height: 820px;
+      transition: transform 380ms var(--ease);
+      will-change: transform;
+    }
+
+    .wide-carousel-slide {
+      flex: 0 0 100%;
+      width: 100%;
+      max-height: 820px;
+      display: flex;
+      align-items: center;
       justify-content: center;
-      gap: 12px;
+      background: var(--paper-alt);
+    }
+
+    .wide-carousel-slide img {
+      width: 100%;
+      height: 100%;
+      max-height: 820px;
+      object-fit: cover;
+      display: block;
     }
 
     .wide-arrow {
@@ -823,15 +831,45 @@
       align-items: center;
       justify-content: center;
       z-index: 4;
+      transition: transform 140ms var(--ease), background-color 140ms var(--ease);
     }
 
     .wide-arrow:hover {
       background: var(--red);
       color: var(--white);
+      transform: translateY(-50%) scale(1.05);
     }
 
-    .wide-arrow--prev { left: 12px; }
-    .wide-arrow--next { right: 12px; }
+    .wide-arrow--prev { left: 10px; }
+    .wide-arrow--next { right: 10px; }
+
+    .wide-carousel-dots {
+      position: absolute;
+      bottom: 14px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 8px;
+      padding: 6px 12px;
+      background: rgba(0, 0, 0, 0.72);
+      border: 2px solid var(--black);
+      border-radius: 999px;
+      z-index: 4;
+    }
+
+    .wide-carousel-dot {
+      width: 10px;
+      height: 10px;
+      padding: 0;
+      border-radius: 50%;
+      border: 1.5px solid var(--white);
+      background: transparent;
+    }
+
+    .wide-carousel-dot.is-active {
+      background: var(--yellow);
+      border-color: var(--yellow);
+    }
 
     /* ================= 7. CHART PLATES (CHARTS 1, 2A, 2B, 3) ================= */
     .chart-plate {
@@ -1642,16 +1680,25 @@
           <p>Mediante un cuidadoso proceso de investigación, recopilamos los datos de cada disco que alguna vez lanzaron los hermanos Gallagher y Damon Albarn. Pero no nos limitamos solamente a Oasis y Blur, sino que dimos un paso más allá e incluimos todos los proyectos que han llevado el nombre de alguno de ellos. Así, logramos construir una base de datos que reúne la discografía completa de las dos bandas mencionadas, Gorillaz, Noel Gallagher’s High Flying Birds, Beady Eye, The Good the Bad &amp; the Queen, y las incursiones en solitario de los líderes de estos proyectos.</p>
         </div>
 
-        <!-- Carrusel de imágenes para crónica 1 (Wireframe full-width carousel) -->
-        <div class="wide-carousel" role="region" aria-label="Carrusel de hitos discográficos">
-          <button type="button" class="wide-arrow wide-arrow--prev" id="c1Prev" aria-label="Hito anterior">
-            <svg width="16" height="14" viewBox="0 0 16 14" fill="currentColor" aria-hidden="true"><path d="M16 6H6V2H4v2H2v2H0v2h2v2h2v2h2V8h10V6z"/></svg>
-          </button>
-          <button type="button" class="wide-arrow wide-arrow--next" id="c1Next" aria-label="Siguiente hito">
-            <svg width="16" height="14" viewBox="0 0 16 14" fill="currentColor" aria-hidden="true"><path d="M0 6h10V2h2v2h2v2h2v2h-2v2h-2v2h-2V8H0V6z"/></svg>
+        <!-- Carrusel horizontal de 8 imágenes para crónica 1 -->
+        <div class="wide-carousel" role="region" aria-label="Galería de imágenes discográficas">
+          <button type="button" class="wide-arrow wide-arrow--prev" id="c1Prev" aria-label="Imagen anterior">
+            <svg width="16" height="14" viewBox="0 0 16 14" fill="currentColor" aria-hidden="true">
+              <path d="M16 6H6V2H4v2H2v2H0v2h2v2h2v2h2V8h10V6z"/>
+            </svg>
           </button>
 
-          <div class="wide-carousel-stage" id="c1Stage"></div>
+          <div class="wide-carousel-viewport">
+            <div class="wide-carousel-track" id="c1Track"></div>
+          </div>
+
+          <button type="button" class="wide-arrow wide-arrow--next" id="c1Next" aria-label="Siguiente imagen">
+            <svg width="16" height="14" viewBox="0 0 16 14" fill="currentColor" aria-hidden="true">
+              <path d="M0 6h10V2h2v2h2v2h2v2h-2v2h-2v2h-2V8H0V6z"/>
+            </svg>
+          </button>
+
+          <div class="wide-carousel-dots" id="c1Dots" aria-label="Indicadores de imagen"></div>
         </div>
 
         <div class="reading-col">
@@ -1980,46 +2027,69 @@
       document.getElementById('dpadDown').addEventListener('click', () => { camBW = false; renderCamera(); });
       renderCamera();
 
-      // 5. WIDE CAROUSEL FOR CRÓNICA 1
-      const C1_SLIDES = [
-        {
-          title: 'De Parklife a Definitely Maybe',
-        },
-        {
-          title: 'El nacimiento de Gorillaz',
-        },
-        {
-          title: 'Quiebre en París y contraataque en estudio',
-        },
-        {
-          title: 'The Ballad of Darren y The Mountain',
-        }
+      // 5. WIDE CAROUSEL FOR CRÓNICA 1 (8 IMÁGENES HORIZONTALES SIN TEXTO)
+      const C1_IMAGES = [
+        { src: 'visualizaciones/análisis_visualizaciones/imágenes/carrusel_1.jpg', alt: 'Imagen 1' },
+        { src: 'visualizaciones/análisis_visualizaciones/imágenes/carrusel_1.jpg', alt: 'Imagen 2' },
+        { src: 'visualizaciones/análisis_visualizaciones/imágenes/carrusel_1.jpg', alt: 'Imagen 3' },
+        { src: 'visualizaciones/análisis_visualizaciones/imágenes/carrusel_1.jpg', alt: 'Imagen 4' },
+        { src: 'visualizaciones/análisis_visualizaciones/imágenes/carrusel_1.jpg', alt: 'Imagen 5' },
+        { src: 'visualizaciones/análisis_visualizaciones/imágenes/carrusel_1.jpg', alt: 'Imagen 6' },
+        { src: 'visualizaciones/análisis_visualizaciones/imágenes/carrusel_1.jpg', alt: 'Imagen 7' },
+        { src: 'visualizaciones/análisis_visualizaciones/imágenes/carrusel_1.jpg', alt: 'Imagen 8' }
       ];
 
       let c1Idx = 0;
-      function renderC1() {
-        const s = C1_SLIDES[c1Idx];
-        const stage = document.getElementById('c1Stage');
-        stage.innerHTML = `
-          <div class="wide-carousel-art">
-            <img src="${makePosterFallback(s.left, s.right, s.bgL, s.bgR, s.sub)}" alt="${s.title}" style="width:100%; height:100%; object-fit:cover;"/>
+      const c1Track = document.getElementById('c1Track');
+      const c1Dots = document.getElementById('c1Dots');
+
+      function initC1Carousel() {
+        c1Track.innerHTML = C1_IMAGES.map((img, i) => `
+          <div class="wide-carousel-slide">
+            <img
+              src="${img.src}"
+              alt="${img.alt}"
+              loading="${i === 0 ? 'eager' : 'lazy'}"
+              onerror="this.src='${makePosterFallback('SIDE-B', 'IMAGEN 0' + (i + 1), '#FFE241', '#1E2165', 'ARCHIVO VISUAL 1991–2026')}'"
+            />
           </div>
-          <div class="wide-carousel-copy">
-            <span style="font-family:var(--font-display); font-weight:900; font-size:0.75rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--yellow);">
-              ${s.tag} · ${c1Idx + 1}/${C1_SLIDES.length}
-            </span>
-            <h3 style="font-family:var(--font-display); font-weight:900; font-size:1.45rem; text-transform:uppercase; margin:0; line-height:1.15;">
-              ${s.title}
-            </h3>
-            <p style="margin:0; font-size:0.92rem; color:rgba(255,255,255,0.92); line-height:1.6;">
-              ${s.text}
-            </p>
-          </div>
-        `;
+        `).join('');
+
+        c1Dots.innerHTML = C1_IMAGES.map((_, i) => `
+          <button
+            type="button"
+            class="wide-carousel-dot ${i === 0 ? 'is-active' : ''}"
+            data-c1-dot="${i}"
+            aria-label="Ir a imagen ${i + 1}">
+          </button>
+        `).join('');
+
+        c1Dots.querySelectorAll('[data-c1-dot]').forEach(dot => {
+          dot.addEventListener('click', () => {
+            c1Idx = Number(dot.dataset.c1Dot);
+            updateC1Position();
+          });
+        });
       }
-      document.getElementById('c1Prev').addEventListener('click', () => { c1Idx = (c1Idx - 1 + C1_SLIDES.length) % C1_SLIDES.length; renderC1(); });
-      document.getElementById('c1Next').addEventListener('click', () => { c1Idx = (c1Idx + 1) % C1_SLIDES.length; renderC1(); });
-      renderC1();
+
+      function updateC1Position() {
+        c1Track.style.transform = `translateX(-${c1Idx * 100}%)`;
+        c1Dots.querySelectorAll('.wide-carousel-dot').forEach((dot, i) => {
+          dot.classList.toggle('is-active', i === c1Idx);
+        });
+      }
+
+      document.getElementById('c1Prev').addEventListener('click', () => {
+        c1Idx = (c1Idx - 1 + C1_IMAGES.length) % C1_IMAGES.length;
+        updateC1Position();
+      });
+
+      document.getElementById('c1Next').addEventListener('click', () => {
+        c1Idx = (c1Idx + 1) % C1_IMAGES.length;
+        updateC1Position();
+      });
+
+      initC1Carousel();
 
       // 6. GRÁFICO 1: VIGENCIA DISCOGRÁFICA (1991–2026)
       const BAND_META = [
