@@ -769,44 +769,39 @@
       display: block;
     }
 
-    /* ================= 6. WIDE CHRONICLE 1 CAROUSEL (HORIZONTAL 8 IMÁGENES) ================= */
+    /* ================= 6. WIDE CHRONICLE 1 CAROUSEL ================= */
     .wide-carousel {
       position: relative;
       width: 100%;
+      max-width: 820px;
       max-height: 820px;
       margin: 36px auto;
       padding: 0 36px;
-      background: var(--navy);
+      background: var(--paper-alt);
       border: 3px solid var(--black);
       box-shadow: 8px 8px 0 var(--black);
-      overflow: hidden;
     }
 
     .wide-carousel-viewport {
       width: 100%;
       max-height: 820px;
       overflow: hidden;
-      border-left: 3px solid var(--black);
-      border-right: 3px solid var(--black);
-      background: var(--black);
     }
 
     .wide-carousel-track {
       display: flex;
       width: 100%;
       max-height: 820px;
-      transition: transform 380ms var(--ease);
-      will-change: transform;
+      transition: transform 360ms var(--ease);
     }
 
     .wide-carousel-slide {
       flex: 0 0 100%;
       width: 100%;
+      aspect-ratio: 16 / 10;
       max-height: 820px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: var(--paper-alt);
+      background: var(--white);
+      overflow: hidden;
     }
 
     .wide-carousel-slide img {
@@ -831,45 +826,16 @@
       align-items: center;
       justify-content: center;
       z-index: 4;
-      transition: transform 140ms var(--ease), background-color 140ms var(--ease);
+      transition: background-color 140ms var(--ease), color 140ms var(--ease);
     }
 
     .wide-arrow:hover {
       background: var(--red);
       color: var(--white);
-      transform: translateY(-50%) scale(1.05);
     }
 
-    .wide-arrow--prev { left: 10px; }
-    .wide-arrow--next { right: 10px; }
-
-    .wide-carousel-dots {
-      position: absolute;
-      bottom: 14px;
-      left: 50%;
-      transform: translateX(-50%);
-      display: flex;
-      gap: 8px;
-      padding: 6px 12px;
-      background: rgba(0, 0, 0, 0.72);
-      border: 2px solid var(--black);
-      border-radius: 999px;
-      z-index: 4;
-    }
-
-    .wide-carousel-dot {
-      width: 10px;
-      height: 10px;
-      padding: 0;
-      border-radius: 50%;
-      border: 1.5px solid var(--white);
-      background: transparent;
-    }
-
-    .wide-carousel-dot.is-active {
-      background: var(--yellow);
-      border-color: var(--yellow);
-    }
+    .wide-arrow--prev { left: 8px; }
+    .wide-arrow--next { right: 8px; }
 
     /* ================= 7. CHART PLATES (CHARTS 1, 2A, 2B, 3) ================= */
     .chart-plate {
@@ -1681,24 +1647,31 @@
         </div>
 
         <!-- Carrusel horizontal de 8 imágenes para crónica 1 -->
-        <div class="wide-carousel" role="region" aria-label="Galería de imágenes discográficas">
-          <button type="button" class="wide-arrow wide-arrow--prev" id="c1Prev" aria-label="Imagen anterior">
+        <div class="wide-carousel" role="region" aria-label="Carrusel de imágenes">
+          <button type="button" class="wide-arrow wide-arrow--prev" id="c1Prev" aria-label="Anterior">
             <svg width="16" height="14" viewBox="0 0 16 14" fill="currentColor" aria-hidden="true">
               <path d="M16 6H6V2H4v2H2v2H0v2h2v2h2v2h2V8h10V6z"/>
             </svg>
           </button>
 
           <div class="wide-carousel-viewport">
-            <div class="wide-carousel-track" id="c1Track"></div>
+            <div class="wide-carousel-track" id="c1Track">
+              <div class="wide-carousel-slide"><img src="visualizaciones/análisis_visualizaciones/imágenes/carrusel_1.jpeg" alt="Discografía Blur"></div>
+              <div class="wide-carousel-slide"><img src="visualizaciones/análisis_visualizaciones/imágenes/carrusel_1.jpeg" alt="Discografía Blur"></div>
+              <div class="wide-carousel-slide"><img src="visualizaciones/análisis_visualizaciones/imágenes/carrusel_1.jpeg" alt="Discografía Blur"></div>
+              <div class="wide-carousel-slide"><img src="visualizaciones/análisis_visualizaciones/imágenes/carrusel_1.jpeg" alt="Discografía Blur"></div>
+              <div class="wide-carousel-slide"><img src="visualizaciones/análisis_visualizaciones/imágenes/carrusel_1.jpeg" alt="Discografía Blur"></div>
+              <div class="wide-carousel-slide"><img src="visualizaciones/análisis_visualizaciones/imágenes/carrusel_1.jpeg" alt="Discografía Blur"></div>
+              <div class="wide-carousel-slide"><img src="visualizaciones/análisis_visualizaciones/imágenes/carrusel_1.jpeg" alt="Discografía Blur"></div>
+              <div class="wide-carousel-slide"><img src="visualizaciones/análisis_visualizaciones/imágenes/carrusel_1.jpeg" alt="Discografía Blur"></div>
+            </div>
           </div>
 
-          <button type="button" class="wide-arrow wide-arrow--next" id="c1Next" aria-label="Siguiente imagen">
+          <button type="button" class="wide-arrow wide-arrow--next" id="c1Next" aria-label="Siguiente">
             <svg width="16" height="14" viewBox="0 0 16 14" fill="currentColor" aria-hidden="true">
               <path d="M0 6h10V2h2v2h2v2h2v2h-2v2h-2v2h-2V8H0V6z"/>
             </svg>
           </button>
-
-          <div class="wide-carousel-dots" id="c1Dots" aria-label="Indicadores de imagen"></div>
         </div>
 
         <div class="reading-col">
@@ -2027,69 +2000,25 @@
       document.getElementById('dpadDown').addEventListener('click', () => { camBW = false; renderCamera(); });
       renderCamera();
 
-      // 5. WIDE CAROUSEL FOR CRÓNICA 1 (8 IMÁGENES HORIZONTALES SIN TEXTO)
-      const C1_IMAGES = [
-        { src: 'visualizaciones/análisis_visualizaciones/imágenes/carrusel_1.jpg', alt: 'Imagen 1' },
-        { src: 'visualizaciones/análisis_visualizaciones/imágenes/carrusel_1.jpg', alt: 'Imagen 2' },
-        { src: 'visualizaciones/análisis_visualizaciones/imágenes/carrusel_1.jpg', alt: 'Imagen 3' },
-        { src: 'visualizaciones/análisis_visualizaciones/imágenes/carrusel_1.jpg', alt: 'Imagen 4' },
-        { src: 'visualizaciones/análisis_visualizaciones/imágenes/carrusel_1.jpg', alt: 'Imagen 5' },
-        { src: 'visualizaciones/análisis_visualizaciones/imágenes/carrusel_1.jpg', alt: 'Imagen 6' },
-        { src: 'visualizaciones/análisis_visualizaciones/imágenes/carrusel_1.jpg', alt: 'Imagen 7' },
-        { src: 'visualizaciones/análisis_visualizaciones/imágenes/carrusel_1.jpg', alt: 'Imagen 8' }
-      ];
+      // 5. WIDE CAROUSEL FOR CRÓNICA 1
+           const c1Track = document.getElementById('c1Track');
+            const c1Slides = c1Track ? c1Track.children : [];
+            let c1Idx = 0;
 
-      let c1Idx = 0;
-      const c1Track = document.getElementById('c1Track');
-      const c1Dots = document.getElementById('c1Dots');
+            function updateC1() {
+              if (!c1Track || !c1Slides.length) return;
+              c1Track.style.transform = `translateX(-${c1Idx * 100}%)`;
+            }
 
-      function initC1Carousel() {
-        c1Track.innerHTML = C1_IMAGES.map((img, i) => `
-          <div class="wide-carousel-slide">
-            <img
-              src="${img.src}"
-              alt="${img.alt}"
-              loading="${i === 0 ? 'eager' : 'lazy'}"
-              onerror="this.src='${makePosterFallback('SIDE-B', 'IMAGEN 0' + (i + 1), '#FFE241', '#1E2165', 'ARCHIVO VISUAL 1991–2026')}'"
-            />
-          </div>
-        `).join('');
+           document.getElementById('c1Prev').addEventListener('click', () => {
+             c1Idx = (c1Idx - 1 + c1Slides.length) % c1Slides.length;
+             updateC1();
+           });
 
-        c1Dots.innerHTML = C1_IMAGES.map((_, i) => `
-          <button
-            type="button"
-            class="wide-carousel-dot ${i === 0 ? 'is-active' : ''}"
-            data-c1-dot="${i}"
-            aria-label="Ir a imagen ${i + 1}">
-          </button>
-        `).join('');
-
-        c1Dots.querySelectorAll('[data-c1-dot]').forEach(dot => {
-          dot.addEventListener('click', () => {
-            c1Idx = Number(dot.dataset.c1Dot);
-            updateC1Position();
+           document.getElementById('c1Next').addEventListener('click', () => {
+             c1Idx = (c1Idx + 1) % c1Slides.length;
+             updateC1();
           });
-        });
-      }
-
-      function updateC1Position() {
-        c1Track.style.transform = `translateX(-${c1Idx * 100}%)`;
-        c1Dots.querySelectorAll('.wide-carousel-dot').forEach((dot, i) => {
-          dot.classList.toggle('is-active', i === c1Idx);
-        });
-      }
-
-      document.getElementById('c1Prev').addEventListener('click', () => {
-        c1Idx = (c1Idx - 1 + C1_IMAGES.length) % C1_IMAGES.length;
-        updateC1Position();
-      });
-
-      document.getElementById('c1Next').addEventListener('click', () => {
-        c1Idx = (c1Idx + 1) % C1_IMAGES.length;
-        updateC1Position();
-      });
-
-      initC1Carousel();
 
       // 6. GRÁFICO 1: VIGENCIA DISCOGRÁFICA (1991–2026)
       const BAND_META = [
