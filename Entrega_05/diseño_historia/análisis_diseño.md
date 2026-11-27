@@ -4,7 +4,7 @@ La estructura narrativa que definimos para la historia es de carácter lineal y 
 
 * Los que se encuentran en la barra de navegación sirven para saltar hacia momentos específicos de la webstory y ahorrarle al usuario tener que bajar por todo el contenido en el caso de que quiera buscar algo.
 
-* Los que están integrados dentro de alguna de las secciones (por ejemplo, el botón **Comenzar** que está al inicio de la página) sirven para dar paso a la sección que está inmediatamente después, en una interacción sencilla y corta. De la misma manera, las flechas presentes en los carruseles sirven para transicionar entre las **slides** de cada uno.
+* Los que están integrados dentro de alguna de las secciones (por ejemplo, el botón *Comenzar* que está al inicio de la página) sirven para dar paso a la sección que está inmediatamente después, en una interacción sencilla y corta. De la misma manera, las flechas presentes en los carruseles sirven para transicionar entre las *slides* de cada uno.
 
 * Los que se encuentran dentro del gráfico 1 sirven para facilitar la visualización de los subgráficos dentro de esa visualización de datos.
 

@@ -1,0 +1,36 @@
+﻿show_id;artista/proyecto;nombre_tour;fecha_inicio;fecha_término;cantidad_conciertos
+BLU_001;Blur;Leisure Tour;04-10-1991;29-02-1992;41
+BLU_002;Blur;Moder Life Is Rubbish Tour;19-05-1993;07-12-1993;54
+BLU_003;Blur;Parklife Tour;11-05-1994;29-11-1994;79
+BLU_004;Blur;The Great Escape Tour;25-09-1995;15-06-1996;78
+BLU_005;Blur;Blur Tour;07-03-1997;17-12-1997;113
+BLU_006;Blur;13 Tour;30-01-1999;27-11-1999;35
+BLU_007;Blur;Think Tank Tour;08-05-2003;12-12-2003;75
+BLU_008;Blur;2013/2014 Festival Tour;15-03-2013;14-01-2014;27
+BLU_009;Blur;The Magic Whip Tour;06-06-2015;29-11-2015;23
+BLU_010;Blur;The Ballad of Darren;01-06-2023;26-11-2023;22
+OAS_001;Oasis;Definitely Maybe Tour;06-02-1994;22-04-1995;143
+OAS_002;Oasis;(What's The Story) Morning Glory? Tour;22-06-1995;10-09-1996;100
+OAS_003;Oasis;Be Here Now Tour;15-06-1997;25-03-1998;82
+OAS_004;Oasis;Standing on the Shoulders of Giants;03-12-1999;31-07-2001;133
+OAS_005;Oasis;Heathen Chemistry Tour;17-06-2002;12-03-2003;94
+OAS_006;Oasis;Don't Believe the Truth Tour;10-05-2005;31-03-2006;123
+OAS_007;Oasis;Dig Out Your Soul Tour;26-08-2008;22-08-2009;118
+OAS_008;Oasis;Oasis Live '25 Tour;04-06-2025;23-11-2025;41
+GOR_001;Gorillaz;Gorillaz Live;22-03-2001;20-07-2002;22
+GOR_002;Gorillaz;Escape to Plastic Beach Tour;03-10-2010;21-12-2010;37
+GOR_003;Gorillaz;Humanz Tour;08-07-2017;30-03-2018;53
+GOR_004;Gorillaz;The Now Now Tour;01-06-2018;24-10-2018;29
+GOR_005;Gorillaz;Gorillaz World Tour;28-04-2022;23-10-2022;55
+GOR_006;Gorillaz;The Mountain Tour;20-03-2026;31-01-2027;71
+BEA_001;Beady Eye;Different Gear Still Speeding Tour;03-03-2011;12-08-2012;87
+BEA_002;Beady Eye;BE Tour;03-06-2013;26-03-2014;48
+LIA_001;Liam Gallagher;As You Were Tour;30-05-2017;20-09-2018;130
+LIA_002;Liam Gallagher;Why Me? Why Not Tour;21-06-2019;12-03-2020;65
+LIA_003;Liam Gallagher;C'Mon You Know Tour;01-06-2022;22-08-2023;37
+HFB_001;Noel Gallagher's High Flying Birds;High Flying Birds Tour;23-10-2011;13-11-2012;136
+HFB_002;Noel Gallagher's High Flying Birds;Chasing Yesterday Tour;03-03-2015;06-09-2016;125
+HFB_003;Noel Gallagher's High Flying Birds;Stranded on the Earth World Tour;09-02-2018;30-11-2019;123
+HFB_004;Noel Gallagher's High Flying Birds;Council Skies Tour;02-06-2023;19-08-2024;71
+GBQ_001;The Good the Bad & the Queen;The Good the Bad & the Queen Tour;27-01-2007;19-08-2007;37
+DAM_001;Damon Albarn;Everyday Robots Tour;30-04-2014;16-12-2014;67
