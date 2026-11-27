@@ -13,6 +13,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet" />
 
 </head>
+
 <body class="is-ticket-locked">
 
   <!-- BIENVENIDA: TICKET DE CONCIERTO VIP -->
@@ -87,15 +88,8 @@
   <!-- 1. TOP BAR (WIREFRAME: LOGO SIDE-B + 4 NAV BUTTONS) -->
   <header class="site-header">
     <div class="container header-inner">
-      <a href="#portada" class="brand-mark" aria-label="Logo Side-B">
-        <svg width="26" height="32" viewBox="0 0 60 76" fill="none" aria-hidden="true">
-          <path d="M12 6 L42 6 C52 6 56 14 56 22 C56 29 51 34 45 36 C53 38 58 44 58 53 C58 64 50 70 39 70 L12 70 Z" fill="#1E2165" stroke="#000000" stroke-width="3"/>
-          <path d="M4 12 L12 6 L12 70 L4 64 Z" fill="#FFE241" stroke="#000000" stroke-width="2.5"/>
-          <rect x="20" y="18" width="14" height="40" rx="2" fill="#FFFFFF" stroke="#000000" stroke-width="2"/>
-          <circle cx="27" cy="28" r="5" fill="#9496A5" stroke="#000000" stroke-width="1.5"/>
-          <circle cx="27" cy="48" r="5" fill="#9496A5" stroke="#000000" stroke-width="1.5"/>
-        </svg>
-        <span class="brand-word">side-b</span>
+      <a href="#portada" class="brand-mark" aria-label="Side-B — Inicio">
+        <img src="visualizaciones/análisis_visualizaciones/imágenes/logo_real.png" alt="Side-B" class="brand-logo-img" />
       </a>
 
       <nav class="top-nav" aria-label="Navegación principal">
@@ -103,11 +97,8 @@
         <a href="#tres-caminos">Protagonistas</a>
         <a href="#vigencia-musical">Vigencia</a>
         <a href="#cultura-popular">Cultura Pop</a>
+        <a href="#tercera-base" class="nav-link--tours">Giras mundiales</a>
       </nav>
-
-      <a href="#tercera-base" class="header-cta">
-        <span>Giras 1991–2027</span>
-      </a>
     </div>
     <div class="progress-track" aria-hidden="true">
       <div class="progress-fill" id="readProgress"></div>
@@ -130,9 +121,6 @@
 
       <div class="container">
         <div class="hero-center-box">
-          <div class="hero-kicker">
-            LONDRES · MÁNCHESTER · ARCHIVO SONORO 1995–2026
-          </div>
 
           <h1 class="hero-title">
             Treinta años después de la Batalla del Britpop
@@ -151,117 +139,42 @@
             </a>
           </div>
         </div>
-
-        <div class="hero-pop-strip">
-          <div class="city-banner-card city-banner-card--london">
-            <div>
-              <div class="city-banner-title">Londres · Damon Albarn</div>
-              <div style="font-size:0.78rem;">Explosividad creativa · Pop Art · 64 discos · 241 pantallas</div>
-            </div>
-            <!-- London Underground Roundel -->
-            <svg width="34" height="28" viewBox="0 0 24 20" fill="none" aria-hidden="true">
-              <circle cx="12" cy="10" r="7" stroke="#C02126" stroke-width="3.5"/>
-              <rect x="2" y="8.5" width="20" height="3" fill="#1E2165"/>
-            </svg>
-          </div>
-
-          <div class="city-banner-card city-banner-card--manchester">
-            <div>
-              <div class="city-banner-title">Mánchester · Liam y Noel Gallagher</div>
-              <div style="font-size:0.78rem; color:rgba(255,255,255,0.9);">Minimalismo frontal · Estadios · 56 discos · 1.656 shows</div>
-            </div>
-            <!-- Manchester Worker Bee -->
-            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-              <ellipse cx="12" cy="13" rx="4" ry="6" fill="#FFE241"/>
-              <path d="M9 11h6M9 14h6" stroke="#000" stroke-width="1.5"/>
-              <ellipse cx="7" cy="9" rx="3.5" ry="2" transform="rotate(-25 7 9)" fill="#FFFFFF" opacity="0.9"/>
-              <ellipse cx="17" cy="9" rx="3.5" ry="2" transform="rotate(25 17 9)" fill="#FFFFFF" opacity="0.9"/>
-            </svg>
-          </div>
-        </div>
-
-        <div class="hero-portada-caption">
-          Imagen de portada · Collages de archivo Londres &amp; Mánchester
-        </div>
       </div>
     </section>
 
-    <!-- 3. REPRODUCTOR DE MÚSICA (WIREFRAME + ICONOS LIBRO DE IDENTIDAD P.7) -->
-    <section id="reproductor" class="player-band" aria-label="Reproductor de música">
+    <!-- 3. BANDA SONORA SIDE-B: PLAYLIST DE SPOTIFY -->
+    <section id="reproductor" class="player-band" aria-label="Banda sonora opcional de Side-B">
       <div class="container">
-        <div class="cassette-player" id="cassettePlayer">
-          <div class="player-top">
-            <div class="player-brand">
-              <!-- Cassette-B con carretes giratorios -->
-              <svg width="46" height="58" viewBox="0 0 60 76" fill="none" aria-hidden="true">
-                <path d="M12 6 L42 6 C52 6 56 14 56 22 C56 29 51 34 45 36 C53 38 58 44 58 53 C58 64 50 70 39 70 L12 70 Z" fill="#1E2165" stroke="#000000" stroke-width="3"/>
-                <path d="M4 12 L12 6 L12 70 L4 64 Z" fill="#FFE241" stroke="#000000" stroke-width="2.5"/>
-                <rect x="20" y="18" width="14" height="40" rx="2" fill="#FFFFFF" stroke="#000000" stroke-width="2"/>
-                <g class="reel-spin" style="transform-origin:27px 28px;">
-                  <circle cx="27" cy="28" r="5" fill="#9496A5" stroke="#000000" stroke-width="1.5"/>
-                  <line x1="27" y1="23" x2="27" y2="33" stroke="#000" stroke-width="1.5"/>
-                </g>
-                <g class="reel-spin" style="transform-origin:27px 48px;">
-                  <circle cx="27" cy="48" r="5" fill="#9496A5" stroke="#000000" stroke-width="1.5"/>
-                  <line x1="22" y1="48" x2="32" y2="48" stroke="#000" stroke-width="1.5"/>
-                </g>
-              </svg>
-              <div class="player-track-info">
-                <div class="player-kicker" id="playerSideLabel">Reproductor Side-B · Pista 1 (Londres)</div>
-                <div class="player-title" id="playerTrackTitle">1995 — Britpop Synth Groove (Blur / Gorillaz)</div>
-              </div>
+        <div class="cassette-player spotify-player">
+          <div class="spotify-player-heading">
+            <div>
+              <h2 class="player-title">GET ONTO IT, LAD!</h2>
+              <p class="spotify-player-copy">Lo mejor de Damon Albarn y los hermanos Galalgher para acompañar tu lectura. No es indispensable que la escuches, pero te prometemos que la experiencia será mejor si lo haces.</p>
             </div>
-
-            <!-- Botones estilo teclado telefónico del Libro de Identidad (P.7) -->
-            <div class="keypad-group" role="group" aria-label="Selector de pistas">
-              <button type="button" class="keypad-btn is-active" data-track="0" aria-label="Pista 1: Londres 1995">
-                <span>1</span>
-                <small>LDN</small>
-              </button>
-              <button type="button" class="keypad-btn" data-track="1" aria-label="Pista 2: Mánchester">
-                <span>2</span>
-                <small>ABC</small>
-              </button>
-              <button type="button" class="keypad-btn" data-track="2" aria-label="Pista 3: Gorillaz Beat">
-                <span>3</span>
-                <small>DEF</small>
-              </button>
-            </div>
+            <div class="spotify-stamp" aria-hidden="true">SIDE<br/>B</div>
           </div>
-
-          <div class="player-controls">
-            <!-- Pixel Play/Pause -->
-            <button type="button" class="pixel-ctrl-btn" id="playToggleBtn" aria-label="Reproducir o pausar audio">
-              <svg id="playIcon" width="18" height="18" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
-                <path d="M3 2h2v2h2v2h2v2H7v2H5v2H3V2zm6 4h2v4H9V6zm2 1h2v2h-2V7z"/>
-              </svg>
-            </button>
-
-            <!-- Pixel Speaker -->
-            <button type="button" class="pixel-ctrl-btn" id="muteToggleBtn" style="background:var(--grey);" aria-label="Silenciar audio">
-              <svg width="18" height="18" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
-                <path d="M2 6h3l4-3v10L5 10H2V6zm9-1h1v6h-1V5zm2-2h1v10h-1V3z"/>
-              </svg>
-            </button>
-
-            <!-- Pixel LOADING... Progress Bar -->
-            <div class="pixel-loading-wrap">
-              <div class="pixel-loading-label">
-                <span id="playerStatusText">PAUSADO · PRESIONA PLAY</span>
-                <span class="tabular" id="playerTimer">00:00</span>
-              </div>
-              <div class="pixel-bar-frame" id="pixelBarFrame" aria-hidden="true"></div>
-            </div>
+          <div class="spotify-embed-wrap">
+            <iframe
+              title="Playlist SIDE-B MIX: Blur y Oasis en Spotify"
+              style="border-radius: 8px; display: block;"
+              src="https://open.spotify.com/embed/playlist/1lvzxVtuB6zH9wjJcGwN0S?utm_source=generator&si=524277d45f754df1"
+              width="100%"
+              height="352"
+              frameborder="0"
+              allowfullscreen
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy">
+            </iframe>
           </div>
         </div>
       </div>
     </section>
 
     <!-- 4. SECCIÓN 1: LA BATALLA DEL BRITPOP + CÁMARA DIGITAL -->
-    <section id="batalla-britpop" class="wf-section wf-section--paper">
+    <section id="batalla-britpop" class="wf-section wf-section--yellow">
       <div class="container">
         <div class="wf-heading-box">
-          <span class="wf-kicker">01 · Agosto – Octubre 1995</span><br/>
+          <span class="wf-kicker">El Origen</span><br/>
           <h2 class="wf-title">La Batalla del Britpop</h2>
         </div>
 
@@ -323,118 +236,131 @@
     <section id="tres-caminos" class="wf-section wf-section--white">
       <div class="container">
         <div class="wf-heading-box">
-          <span class="wf-kicker">02 · Dos ciudades, tres trayectorias</span><br/>
-          <h2 class="wf-title">Tres nombres, tres caminos distintos</h2>
+          <span class="wf-kicker">Dos ciudades, tres trayectorias</span><br/>
+          <h2 class="wf-title">Entre Londres y Manchester</h2>
         </div>
 
         <div class="reading-col">
-          <p>Sin embargo, los roces constantes entre las personalidades de Liam y Noel auguraban un quiebre, y entre períodos de distanciamiento y reuniones para seguir componiendo música, finalmente los Gallagher separaron sus caminos luego de una fuerte pelea en el 2009. Durante ese tiempo, Albarn no se había dejado estar, y en 2001 había dado a conocer uno de los proyectos musicales más importantes del nuevo siglo: la banda virtual Gorillaz.</p>
+          <p>Arreglar texto.</p>
         </div>
 
         <div class="profiles-grid">
-          <!-- Left Card: Damon Albarn (1 circular portrait) -->
+          <!-- Tarjeta Izquierda: Damon Albarn (Credencial VIP) -->
           <article class="profile-card profile-card--albarn">
-            <div class="avatars-row">
-              <div class="avatar-circle" aria-hidden="true">
-                <!-- Pop-Art Damon Albarn SVG Portrait (Libro de Identidad P.1 & P.8) -->
-                <svg viewBox="0 0 120 120" width="110" height="110">
-                  <rect width="120" height="120" fill="#FFE241"/>
-                  <circle cx="92" cy="24" r="14" fill="#C02126" opacity="0.35"/>
-                  <path d="M22 120 C26 88 42 80 60 80 C78 80 94 88 98 120 Z" fill="#1E2165"/>
-                  <rect x="52" y="68" width="16" height="18" fill="#E89E6B"/>
-                  <ellipse cx="60" cy="52" rx="22" ry="26" fill="#F2B880" stroke="#000" stroke-width="2.5"/>
-                  <!-- 90s Britpop fringe hair -->
-                  <path d="M36 48 C36 24 84 22 84 48 C78 36 68 35 60 40 C52 35 42 36 36 48 Z" fill="#1E2165" stroke="#000" stroke-width="2"/>
-                  <circle cx="51" cy="52" r="2.8" fill="#000"/>
-                  <circle cx="69" cy="52" r="2.8" fill="#000"/>
-                  <path d="M53 66 Q60 70 67 66" stroke="#000" stroke-width="2.2" fill="none"/>
-                </svg>
-              </div>
-              <div>
-                <div class="profile-name-bar profile-name-bar--albarn">Damon Albarn</div>
-                <div style="font-size:0.8rem; color:var(--ink-muted); margin-top:6px;">
-                  Londres · Blur · Gorillaz · The Good the Bad &amp; the Queen · Solista
-                </div>
+            <div class="vip-pass-clip" aria-hidden="true">
+              <svg width="48" height="50" viewBox="0 0 48 50" fill="none">
+                <rect x="14" y="2" width="20" height="12" rx="6" fill="#D9DCE5" stroke="#000000" stroke-width="2.5"/>
+                <rect x="19" y="5.5" width="10" height="5" rx="2.5" fill="#FFFFFF" stroke="#000000" stroke-width="1.8"/>
+                <rect x="15" y="13" width="18" height="10" rx="2" fill="#9496A5" stroke="#000000" stroke-width="2.5"/>
+                <line x1="18" y1="16.5" x2="30" y2="16.5" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"/>
+                <circle cx="24" cy="20" r="1.8" fill="#000000"/>
+                <path d="M18 23H30V41C30 43.8 27.3 46 24 46C20.7 46 18 43.8 18 41V23Z" fill="#C4C7D2" stroke="#000000" stroke-width="2.5"/>
+                <line x1="21.5" y1="26" x2="21.5" y2="41" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="vip-pass-header">
+              <div class="vip-pass-slot" aria-hidden="true"></div>
+              <div class="vip-pass-header-row">
+                <span class="vip-pass-badge">VIP · ALL ACCESS</span>
+                <span class="vip-pass-meta tabular">BACKSTAGE · LONDRES</span>
               </div>
             </div>
-
-            <p style="margin:0; font-size:0.94rem;">
-              Mutación constante: del pop irónico londinense en Blur a la animación global de Gorillaz, colaboraciones africanas y proyectos solistas sin pausas prolongadas.
-            </p>
-
-            <div class="profile-metrics tabular">
-              <div>
-                <span class="profile-metric-val">64</span>
-                <span>Discos físicos</span>
+            <div class="vip-pass-body">
+              <div class="avatars-row">
+                <div class="avatar-circle" aria-hidden="true">
+                  <img src="visualizaciones/análisis_visualizaciones/imágenes/albarn1.jpeg" alt="Damon Albarn">
+                </div>
+                <!-- NUEVO DIV PARA IMAGEN AL LADO DEL CÍRCULO -->
+                <div class="avatar-side-box">
+                  <img src="visualizaciones/análisis_visualizaciones/imágenes/firmaalbarn1.jpeg" alt="Firma y estética Damon Albarn">
+                </div>
+                <div>
+                  <div class="profile-name-bar profile-name-bar--albarn">Damon Albarn</div>
+                  <div style="font-size:0.8rem; color:var(--ink-muted); margin-top:6px;">
+                    Londres · Blur · Gorillaz · The Good the Bad &amp; the Queen · Solista
+                  </div>
+                </div>
               </div>
-              <div>
-                <span class="profile-metric-val">241</span>
-                <span>Pantallas / juegos</span>
+              <p style="margin:0; font-size:0.94rem;">
+                Mutación constante: del pop irónico londinense en Blur a la animación global de Gorillaz, colaboraciones africanas y proyectos solistas sin pausas prolongadas.
+              </p>
+            </div>
+            <div class="vip-pass-footer">
+              <div class="vip-pass-serial">
+                <span class="vip-pass-folio tabular">PASS #01 · SIDE-B</span>
+                <span class="vip-pass-code tabular">LDN-1995-ALBARN</span>
               </div>
-              <div>
-                <span class="profile-metric-val">918</span>
-                <span>Conciertos</span>
+              <div class="vip-pass-barcode" aria-hidden="true">
+                <svg width="144" height="30" viewBox="0 0 144 30" fill="#121318">
+                  <rect x="0" y="0" width="3" height="30"/><rect x="5" y="0" width="2" height="30"/><rect x="10" y="0" width="5" height="30"/>
+                  <rect x="18" y="0" width="2" height="30"/><rect x="23" y="0" width="4" height="30"/><rect x="30" y="0" width="2" height="30"/>
+                  <rect x="35" y="0" width="6" height="30"/><rect x="44" y="0" width="2" height="30"/><rect x="49" y="0" width="3" height="30"/>
+                  <rect x="55" y="0" width="5" height="30"/><rect x="63" y="0" width="2" height="30"/><rect x="68" y="0" width="2" height="30"/>
+                  <rect x="73" y="0" width="6" height="30"/><rect x="82" y="0" width="3" height="30"/><rect x="88" y="0" width="2" height="30"/>
+                  <rect x="93" y="0" width="5" height="30"/><rect x="101" y="0" width="2" height="30"/><rect x="106" y="0" width="4" height="30"/>
+                  <rect x="113" y="0" width="2" height="30"/><rect x="118" y="0" width="6" height="30"/><rect x="127" y="0" width="2" height="30"/>
+                  <rect x="132" y="0" width="4" height="30"/><rect x="139" y="0" width="5" height="30"/>
+                </svg>
               </div>
             </div>
           </article>
 
-          <!-- Right Card: Liam y Noel Gallagher (2 circular portraits) -->
+          <!-- Tarjeta Derecha: Liam y Noel Gallagher (Credencial VIP) -->
           <article class="profile-card profile-card--gallagher">
-            <div class="avatars-row">
-              <div class="avatar-circle avatar-circle--navy" aria-hidden="true">
-                <!-- Liam Gallagher Minimalist Portrait -->
-                <svg viewBox="0 0 120 120" width="110" height="110">
-                  <rect width="120" height="120" fill="#1E2165"/>
-                  <path d="M20 120 C24 86 42 80 60 80 C78 80 96 86 100 120 Z" fill="#9496A5" stroke="#000" stroke-width="2"/>
-                  <ellipse cx="60" cy="54" rx="21" ry="25" fill="#F5F2EA" stroke="#000" stroke-width="2.5"/>
-                  <path d="M38 48 C38 24 82 24 82 48 L75 40 L45 40 Z" fill="#000"/>
-                  <!-- Sunglasses -->
-                  <rect x="43" y="47" width="14" height="9" rx="2" fill="#000"/>
-                  <rect x="63" y="47" width="14" height="9" rx="2" fill="#000"/>
-                  <line x1="57" y1="51" x2="63" y2="51" stroke="#000" stroke-width="2"/>
-                  <line x1="53" y1="67" x2="67" y2="67" stroke="#000" stroke-width="2.2"/>
-                </svg>
-              </div>
-
-              <div class="avatar-circle avatar-circle--red" aria-hidden="true">
-                <!-- Noel Gallagher Minimalist Portrait -->
-                <svg viewBox="0 0 120 120" width="110" height="110">
-                  <rect width="120" height="120" fill="#C02126"/>
-                  <path d="M20 120 C24 86 42 80 60 80 C78 80 96 86 100 120 Z" fill="#1E2165" stroke="#000" stroke-width="2"/>
-                  <ellipse cx="60" cy="54" rx="21" ry="25" fill="#F5F2EA" stroke="#000" stroke-width="2.5"/>
-                  <path d="M38 47 C40 24 80 24 82 47 C72 39 48 39 38 47 Z" fill="#121318"/>
-                  <line x1="46" y1="47" x2="56" y2="49" stroke="#000" stroke-width="3"/>
-                  <line x1="64" y1="49" x2="74" y2="47" stroke="#000" stroke-width="3"/>
-                  <circle cx="51" cy="53" r="2.5" fill="#000"/>
-                  <circle cx="69" cy="53" r="2.5" fill="#000"/>
-                  <line x1="54" y1="67" x2="66" y2="67" stroke="#000" stroke-width="2"/>
-                </svg>
-              </div>
-
-              <div>
-                <div class="profile-name-bar profile-name-bar--gallagher">Liam y Noel Gallagher</div>
-                <div style="font-size:0.8rem; color:var(--ink-muted); margin-top:6px;">
-                  Mánchester · Oasis · Beady Eye · High Flying Birds · Liam Solo
-                </div>
+            <div class="vip-pass-clip" aria-hidden="true">
+              <svg width="48" height="50" viewBox="0 0 48 50" fill="none">
+                <rect x="14" y="2" width="20" height="12" rx="6" fill="#D9DCE5" stroke="#000000" stroke-width="2.5"/>
+                <rect x="19" y="5.5" width="10" height="5" rx="2.5" fill="#FFFFFF" stroke="#000000" stroke-width="1.8"/>
+                <rect x="15" y="13" width="18" height="10" rx="2" fill="#9496A5" stroke="#000000" stroke-width="2.5"/>
+                <line x1="18" y1="16.5" x2="30" y2="16.5" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"/>
+                <circle cx="24" cy="20" r="1.8" fill="#000000"/>
+                <path d="M18 23H30V41C30 43.8 27.3 46 24 46C20.7 46 18 43.8 18 41V23Z" fill="#C4C7D2" stroke="#000000" stroke-width="2.5"/>
+                <line x1="21.5" y1="26" x2="21.5" y2="41" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="vip-pass-header">
+              <div class="vip-pass-slot" aria-hidden="true"></div>
+              <div class="vip-pass-header-row">
+                <span class="vip-pass-badge">VIP · ALL ACCESS</span>
+                <span class="vip-pass-meta tabular">BACKSTAGE · MÁNCHESTER</span>
               </div>
             </div>
-
-            <p style="margin:0; font-size:0.94rem;">
-              Minimalismo y frontalidad obrera: tras la ruptura de 2009 dividieron su camino en cuatro proyectos paralelos, manteniendo su hegemonía en los grandes estadios y giras.
-            </p>
-
-            <div class="profile-metrics tabular">
-              <div>
-                <span class="profile-metric-val">56</span>
-                <span>Discos físicos</span>
+            <div class="vip-pass-body">
+              <div class="avatars-row">
+                <div class="avatar-circle avatar-circle--navy" aria-hidden="true">
+                  <img src="visualizaciones/análisis_visualizaciones/imágenes/gallagher1.jpeg" alt="Liam y Noel Gallagher">
+                </div>
+                <!-- NUEVO DIV PARA IMAGEN AL LADO DEL CÍRCULO -->
+                <div class="avatar-side-box">
+                  <img src="visualizaciones/análisis_visualizaciones/imágenes/firmagallagher1.jpeg" alt="Firma y estética hermanos Gallagher">
+                </div>
+                <div>
+                  <div class="profile-name-bar profile-name-bar--gallagher">Liam y Noel Gallagher</div>
+                  <div style="font-size:0.8rem; color:var(--ink-muted); margin-top:6px;">
+                    Mánchester · Oasis · Beady Eye · High Flying Birds · Carreras solistas
+                  </div>
+                </div>
               </div>
-              <div>
-                <span class="profile-metric-val">170</span>
-                <span>Pantallas / juegos</span>
+              <p style="margin:0; font-size:0.94rem;">
+                Minimalismo y frontalidad obrera: tras la ruptura de 2009 dividieron su camino en cuatro proyectos paralelos, manteniendo su hegemonía en los grandes estadios y giras.
+              </p>
+            </div>
+            <div class="vip-pass-footer">
+              <div class="vip-pass-serial">
+                <span class="vip-pass-folio tabular">PASS #02 · SIDE-B</span>
+                <span class="vip-pass-code tabular">MCR-1995-GALLAGHER</span>
               </div>
-              <div>
-                <span class="profile-metric-val">1.656</span>
-                <span>Conciertos</span>
+              <div class="vip-pass-barcode" aria-hidden="true">
+                <svg width="144" height="30" viewBox="0 0 144 30" fill="#121318">
+                  <rect x="0" y="0" width="5" height="30"/><rect x="8" y="0" width="2" height="30"/><rect x="13" y="0" width="4" height="30"/>
+                  <rect x="20" y="0" width="2" height="30"/><rect x="25" y="0" width="6" height="30"/><rect x="34" y="0" width="2" height="30"/>
+                  <rect x="39" y="0" width="3" height="30"/><rect x="45" y="0" width="5" height="30"/><rect x="53" y="0" width="2" height="30"/>
+                  <rect x="58" y="0" width="4" height="30"/><rect x="65" y="0" width="2" height="30"/><rect x="70" y="0" width="6" height="30"/>
+                  <rect x="79" y="0" width="2" height="30"/><rect x="84" y="0" width="3" height="30"/><rect x="90" y="0" width="5" height="30"/>
+                  <rect x="98" y="0" width="2" height="30"/><rect x="103" y="0" width="2" height="30"/><rect x="108" y="0" width="6" height="30"/>
+                  <rect x="117" y="0" width="3" height="30"/><rect x="123" y="0" width="2" height="30"/><rect x="128" y="0" width="5" height="30"/>
+                  <rect x="136" y="0" width="2" height="30"/><rect x="141" y="0" width="3" height="30"/>
+                </svg>
               </div>
             </div>
           </article>
@@ -443,10 +369,10 @@
     </section>
 
     <!-- 6. SECCIÓN 3: ANATOMÍA DE LA VIGENCIA MUSICAL (CRÓNICA 1 + CARRUSEL + GRÁFICO 1) -->
-    <section id="vigencia-musical" class="wf-section wf-section--paper">
+    <section id="vigencia-musical" class="wf-section wf-section--red">
       <div class="container">
         <div class="wf-heading-box">
-          <span class="wf-kicker">03 · Crónica primera base de datos</span><br/>
+          <span class="wf-kicker">El primer descubrimiento</span><br/>
           <h2 class="wf-title">Anatomía de la vigencia musical</h2>
         </div>
 
@@ -458,43 +384,49 @@
           <p>Mediante un cuidadoso proceso de investigación, recopilamos los datos de cada disco que alguna vez lanzaron los hermanos Gallagher y Damon Albarn. Pero no nos limitamos solamente a Oasis y Blur, sino que dimos un paso más allá e incluimos todos los proyectos que han llevado el nombre de alguno de ellos. Así, logramos construir una base de datos que reúne la discografía completa de las dos bandas mencionadas, Gorillaz, Noel Gallagher’s High Flying Birds, Beady Eye, The Good the Bad &amp; the Queen, y las incursiones en solitario de los líderes de estos proyectos.</p>
         </div>
 
-        <!-- Carrusel de imágenes para crónica 1 (Wireframe full-width carousel) -->
-        <div class="wide-carousel" role="region" aria-label="Carrusel de hitos discográficos">
-          <button type="button" class="wide-arrow wide-arrow--prev" id="c1Prev" aria-label="Hito anterior">
-            <svg width="16" height="14" viewBox="0 0 16 14" fill="currentColor" aria-hidden="true"><path d="M16 6H6V2H4v2H2v2H0v2h2v2h2v2h2V8h10V6z"/></svg>
-          </button>
-          <button type="button" class="wide-arrow wide-arrow--next" id="c1Next" aria-label="Siguiente hito">
-            <svg width="16" height="14" viewBox="0 0 16 14" fill="currentColor" aria-hidden="true"><path d="M0 6h10V2h2v2h2v2h2v2h-2v2h-2v2h-2V8H0V6z"/></svg>
+        <!-- Carrusel horizontal de 8 imágenes para crónica 1 -->
+        <div class="wide-carousel" role="region" aria-label="Carrusel de imágenes">
+          <button type="button" class="wide-arrow wide-arrow--prev" id="c1Prev" aria-label="Anterior">
+            <svg width="16" height="14" viewBox="0 0 16 14" fill="currentColor" aria-hidden="true">
+              <path d="M16 6H6V2H4v2H2v2H0v2h2v2h2v2h2V8h10V6z"/>
+            </svg>
           </button>
 
-          <div class="wide-carousel-stage" id="c1Stage"></div>
+          <div class="wide-carousel-viewport">
+            <div class="wide-carousel-track" id="c1Track">
+              <div class="wide-carousel-slide"><img src="visualizaciones/análisis_visualizaciones/imágenes/carrusel_1.jpeg" alt="Discografía Blur"></div>
+              <div class="wide-carousel-slide"><img src="visualizaciones/análisis_visualizaciones/imágenes/carrusel_2.jpeg" alt="Discografía Oasis"></div>
+              <div class="wide-carousel-slide"><img src="visualizaciones/análisis_visualizaciones/imágenes/carrusel_3.jpeg" alt="Discografía Gorillaz"></div>
+              <div class="wide-carousel-slide"><img src="visualizaciones/análisis_visualizaciones/imágenes/carrusel_4.jpeg" alt="Discografía Noel Gallagher's High Flying Birds"></div>
+              <div class="wide-carousel-slide"><img src="visualizaciones/análisis_visualizaciones/imágenes/carrusel_5.jpeg" alt="Discografía Liam Gallagher"></div>
+              <div class="wide-carousel-slide"><img src="visualizaciones/análisis_visualizaciones/imágenes/carrusel_6.jpeg" alt="Discografía Beady Eye"></div>
+              <div class="wide-carousel-slide"><img src="visualizaciones/análisis_visualizaciones/imágenes/carrusel_7.jpeg" alt="Discografía Damon Albarn"></div>
+              <div class="wide-carousel-slide"><img src="visualizaciones/análisis_visualizaciones/imágenes/carrusel_8.jpeg" alt="Discografía The Good, the Bad & the Queen"></div>
+            </div>
+          </div>
+
+          <button type="button" class="wide-arrow wide-arrow--next" id="c1Next" aria-label="Siguiente">
+            <svg width="16" height="14" viewBox="0 0 16 14" fill="currentColor" aria-hidden="true">
+              <path d="M0 6h10V2h2v2h2v2h2v2h-2v2h-2v2h-2V8H0V6z"/>
+            </svg>
+          </button>
         </div>
 
         <div class="reading-col">
           <p>Tal vez en respuesta a sus caracteres conflictivos, los Gallagher desarrollaron una gran variedad de proyectos musicales, con un total de cinco agrupaciones (contando a Oasis), que se han mantenido vigentes por 30 años, desde el lanzamiento de <em>Definitely Maybe</em> en 1994. En comparación, los cuatro proyectos que ha construido Damon Albarn pueden parecer pocos, pero la producción musical de estos cuenta una historia distinta.</p>
         </div>
 
-        <!-- Gráfico vigencia musical (carreramusical_vigencia_discografica.jpg adaptado) -->
+        <!-- Gráfico vigencia musical: Visualización en Flourish -->
         <div class="chart-plate" role="region" aria-label="Gráfico vigencia musical">
           <div class="chart-header">
             <div>
-              <div class="chart-kicker">Gráfico 01 · Vigencia discográfica (1991–2026)</div>
-              <h3 class="chart-title">Damon Albarn vs. los Gallagher: Vigencia discográfica a lo largo de los años</h3>
-            </div>
-            <div class="chart-controls" role="group" aria-label="Filtrar proyectos">
-              <button type="button" class="filter-tab is-active" data-side-filter="all">Todos (9 proyectos)</button>
-              <button type="button" class="filter-tab" data-side-filter="albarn">Albarn · Londres</button>
-              <button type="button" class="filter-tab" data-side-filter="gallagher">Gallagher · Mánchester</button>
+              <h3 class="chart-title">Damon Albarn vs. los hermanos Gallagher: Vigencia discográfica a lo largo de los años</h3>
             </div>
           </div>
 
           <div class="chart-body">
-            <div class="chart-svg-wrap" id="discChartContainer"></div>
+            <div class="flourish-embed flourish-chart" data-src="visualisation/31065277"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/31065277/thumbnail" width="100%" alt="chart visualization" /></noscript></div><div class="flourish-fallback" data-for="visualisation/31065277"><a href="https://public.flourish.studio/visualisation/31065277/visualisation.json?ref=embed-script">https://public.flourish.studio/visualisation/31065277/visualisation.json?ref=embed-script</a></div>
           </div>
-
-          <div class="chart-legend" id="discLegend" aria-label="Leyenda de bandas"></div>
-
-          <div class="chart-inspector" id="discInspector" aria-live="polite"></div>
         </div>
 
         <div class="reading-col">
@@ -504,6 +436,34 @@
 
           <p>Y hay algo todavía más revelador. En 2009, año que los Gallagher decidieron separarse porque ya no se soportaban, Blur lanzó al mercado cuatro discos, tres de los cuales eran grabaciones de shows en vivo que convocaron a miles de fanáticos. Y el año siguiente registra como el más productivo para Gorillaz, musicalmente hablando, con el lanzamiento exitoso de dos álbumes de estudio que han sido íconos de la banda, <em>Plastic Beach</em> y <em>The Fall</em>, y un disco que recolectó una década de singles.</p>
 
+        </div>
+
+        <!-- FOTO QUE SE RASGA EN DIAGONAL AL HACER SCROLL Y SE VUELVE A UNIR AL REGRESAR -->
+        <div class="ruptura-oasis" id="rupturaOasis" role="img" aria-label="Fotografía de Liam y Noel Gallagher rasgándose en diagonal para representar el quiebre de Oasis">
+          <div class="ruptura-marco-fondo" aria-hidden="true"></div>
+
+          <!-- Mitad izquierda (Liam) -->
+          <div class="fragmento-mitad fragmento-mitad--izq">
+            <div class="fragmento-papel fragmento-papel--izq" aria-hidden="true"></div>
+            <img
+              src="visualizaciones/análisis_visualizaciones/imágenes/roto.jpeg"
+              class="fragmento-foto fragmento-foto--izq"
+              alt="Liam Gallagher"
+            >
+          </div>
+
+          <!-- Mitad derecha (Noel) -->
+          <div class="fragmento-mitad fragmento-mitad--der">
+            <div class="fragmento-papel fragmento-papel--der" aria-hidden="true"></div>
+            <img
+              src="visualizaciones/análisis_visualizaciones/imágenes/roto.jpeg"
+              class="fragmento-foto fragmento-foto--der"
+              alt="Noel Gallagher"
+            >
+          </div>
+        </div>
+
+        <div class="reading-col">
           <p>Teniendo esto en la mira, cabe preguntarse: ¿Fue una coincidencia o fue que Damon decidió tomar las riendas de la industria al ver caer a su más grande rival? Mientras los Gallagher se dividían en un grupo tras otro sin lograr volúmenes de venta ni de producción masivos, Albarn fortaleció sus mejores caballos de batalla, con una de sus décadas más productivas.</p>
 
           <p>Nadie puede decir que los hermanos Gallagher no supieron jugar con su fama. Al día de hoy, siguen estando vigentes en el mundo mediático y han logrado penetrar profundamente en la cultura popular, con varios singles que alcanzaron el número uno y que se han convertido en himnos de las tres generaciones de jóvenes que siguieron a su formación. Pero haber ganado el sprint no les aseguró el primer lugar en la maratón. Porque la vigencia en la industria musical, a largo plazo, no la sostuvo la actitud de estrella de rock ni la confrontación mediática, sino que lo hizo la reinvención, la constancia productiva y una ética de trabajo que terminó volcando la balanza a favor de Damon Albarn.</p>
@@ -515,26 +475,21 @@
     <section id="cultura-popular" class="wf-section wf-section--white">
       <div class="container">
         <div class="wf-heading-box">
-          <span class="wf-kicker">04 · Crónica segunda base de datos (411 apariciones)</span><br/>
+          <span class="wf-kicker">Bandas sonoras para toda la vida</span><br/>
           <h2 class="wf-title">De listas de éxitos a las pantallas</h2>
         </div>
 
         <div class="reading-col">
           <p>La disputa entre Blur y Oasis quedó grabada en las listas de éxitos de los noventa, pero la historia de sus protagonistas no terminó cuando sus bandas dejaron de ocupar el centro de la escena. Lejos de los discos y los escenarios, durante estas tres décadas sus canciones han encontrado espacio en películas, series y videojuegos, convirtiéndose en parte de historias que trascienden el ámbito musical.</p>
 
-          <p>Para observar este recorrido, reunimos 411 registros de canciones de los distintos proyectos de Damon Albarn y los hermanos Gallagher presentes en estos tres formatos. Al comparar el total de apariciones, pese a que los Gallagher cuentan con más proyectos musicales entre ambos, el resultado favorece a Albarn: sus proyectos suman 241 apariciones, mientras que los hermanos de Mánchester reúnen 170.</p>
+          <p>Para observar este recorrido, reunimos 411 registros de canciones de los distintos proyectos de Damon Albarn y los hermanos Gallagher presentes en estos tres formatos. Al comparar el total de apariciones, pese a que los Gallagher cuentan con más proyectos musicales entre ambos, el resultado favorece a Albarn: sus proyectos suman 241 apariciones, mientras que los hermanos de Mánchester reúnen 170. Sin embargo, ¿esto se distribuye de igual manera al analizar las apariciones de ambos bandos en videojuegos, series y películas por separado? </p>
         </div>
 
-        <!-- Gráfico cultura popular 1 (grafico.jpg adaptado) -->
+        <!-- Gráfico cultura popular 1 (solo apariciones en unidades) -->
         <div class="chart-plate" role="region" aria-label="Gráfico cultura popular 1">
           <div class="chart-header">
             <div>
-              <div class="chart-kicker">Gráfico cultura popular 1 · Totales por formato</div>
               <h3 class="chart-title">Dos legados del Britpop: música en series, películas y videojuegos</h3>
-            </div>
-            <div class="chart-controls">
-              <button type="button" class="filter-tab is-active" data-pop-mode="count">Apariciones (411)</button>
-              <button type="button" class="filter-tab" data-pop-mode="percent">Porcentaje (%)</button>
             </div>
           </div>
           <div class="chart-body">
@@ -552,85 +507,159 @@
           </div>
         </div>
 
-        <!-- Wireframe: 3 botones centrales (Videojuegos | Series | Cine) -->
-        <div class="pop-cat-buttons" role="group" aria-label="Explorar formato de cultura popular">
-          <button type="button" class="key-btn key-btn--navy is-active" data-pop-cat-btn="Videojuego">Videojuegos</button>
-          <button type="button" class="key-btn key-btn--navy" data-pop-cat-btn="Serie">Series</button>
-          <button type="button" class="key-btn key-btn--navy" data-pop-cat-btn="Pelicula">Cine</button>
-        </div>
-
-        <!-- Gráfico cultura popular 2 (Desglose interactivo de canciones + crónica del formato seleccionado) -->
-        <div class="chart-plate" role="region" aria-label="Gráfico cultura popular 2: canciones líderes por formato">
-          <div class="chart-header">
-            <div>
-              <div class="chart-kicker" id="pop2Kicker">Gráfico cultura popular 2 · Videojuegos</div>
-              <h3 class="chart-title" id="pop2Title">Canciones más sincronizadas en Videojuegos (86 Albarn vs. 31 Gallagher)</h3>
-            </div>
-          </div>
-          <div class="chart-body" id="pop2Body"></div>
-        </div>
-
-        <!-- Textos completos de Videojuegos, Series y Cine -->
         <div class="reading-col" style="margin-top:32px;">
           <h3 style="font-family:var(--font-display); font-weight:900; text-transform:uppercase; color:var(--navy); margin-bottom:10px;">Conquistando los videojuegos</h3>
           <p>En los videojuegos, Damon Albarn vuelve a tomar la delantera frente a los Gallagher. Sus proyectos reúnen 86 apariciones, casi el triple de las 31 registradas por los hermanos de Mánchester. El gran responsable de este resultado es Gorillaz, la banda virtual que Albarn creó junto al dibujante Jamie Hewlett. Ambos dieron vida a un grupo de personajes animados con identidades, personalidades e historias propias. De esta manera, las canciones de Albarn llegaron tanto a títulos tradicionales como <em>FIFA</em> y a experiencias virtuales como <em>Fortnite</em>.</p>
-
+        
           <h3 style="font-family:var(--font-display); font-weight:900; text-transform:uppercase; color:var(--navy); margin:24px 0 10px;">Distintos repertorios, mismas historias</h3>
           <p>Aunque Albarn vuelve a quedar por encima de los Gallagher cuando la música llega a la televisión, la ventaja es estrecha. En las series, sus proyectos acumulan 129 apariciones, frente a las 110 de los hermanos de Mánchester. Junto a los automóviles de <em>Top Gear</em>, las canciones de ambos bandos acompañaron a miles de adolescentes con <em>Skins</em>, <em>Shameless</em> y <em>My Mad Fat Diary</em>.</p>
+        </div>
 
+        <div class="collage-frame">
+          <img src="visualizaciones/análisis_visualizaciones/imágenes/collage.jpeg" alt="Collage de series con música del Britpop">
+        </div>
+
+        <div class="reading-col" style="margin-top:32px;">
           <h3 style="font-family:var(--font-display); font-weight:900; text-transform:uppercase; color:var(--navy); margin:24px 0 10px;">Proyectos hechos películas</h3>
-          <p>En el cine, la balanza finalmente se inclina hacia los Gallagher, aunque por un margen mínimo. Los hermanos de Mánchester reúnen 29 apariciones, apenas tres más que las 26 registradas por los proyectos de Albarn. En el caso de los Gallagher, su historia también ha llegado al cine a través de documentales como <em>Oasis: Supersonic</em> (2016), que reconstruye el ascenso de la banda y recupera parte de su repertorio como protagonista del relato.</p>
+          <p>En el cine, la balanza finalmente se inclina hacia los Gallagher, aunque por un margen mínimo. Los hermanos de Mánchester reúnen 29 apariciones, apenas tres más que las 26 registradas por los proyectos de Albarn. En el caso de los Gallagher, su historia también ha llegado al cine a través de sus documentales, entre ellos <em>Oasis: Supersonic</em> (2016).</p>
+          <p>También parece importante observar la distribución de las series y películas en que ambos protagonistas suenan, donde Estados Unidos se consolida como el principal, seguido de Reino Unido. ¿Se trata entonces de una mera popularidad en su tierra natal? </p>
+        </div>
+
+        <!--Podio países con mayor presencia-->
+        <section class="podium-container">
+        <div class="podium">
+
+          <!-- SEGUNDO LUGAR -->
+          <div class="podium-item second">
+            <div class="flag">
+              <img src="visualizaciones/análisis_visualizaciones/imágenes/uk.jpeg" alt="Reino Unido">
+            </div>
+            <div class="works">160 <span>obras</span></div>
+
+            <div class="podium-block">
+              <span class="position">2</span>
+            </div>
+          </div>
+
+          <!-- PRIMER LUGAR -->
+          <div class="podium-item first">
+            <div class="flag">
+              <img src="visualizaciones/análisis_visualizaciones/imágenes/usa.jpeg" alt="Estados Unidos">
+            </div>
+            <div class="works">216 <span>obras</span></div>
+
+            <div class="podium-block">
+              <span class="position">1</span>
+            </div>
+          </div>
+
+          <!-- TERCER LUGAR -->
+          <div class="podium-item third">
+            <div class="flag">
+              <img src="visualizaciones/análisis_visualizaciones/imágenes/canada.jpeg" alt="Canadá">
+            </div>
+            <div class="works">16 <span>obras</span></div>
+
+            <div class="podium-block">
+              <span class="position">3</span>
+            </div>
+          </div>
+
+            </div>
+          </section>
+
+        <div class="reading-col" style="margin-top:32px;">
+           <h3 style="font-family:var(--font-display); font-weight:900; text-transform:uppercase; color:var(--navy); margin:24px 0 10px;">¿Y lo más sonado en cada producto cultural?</h3>   
+           <p>Haciendo un desglose de los títulos más sonados, el trono en las tres categorías lo ocupa <em>Song 2</em> de Blur. En el caso de los videojuegos lo siguen de cerca <em> Feel Good Inc.</em> y <em>DARE</em> de Gorillaz, en los puestos dos y tres; Oasis viene recién a aparecer en la quinta ubicación. En las series, los Gallagher llegan al segundo puesto con <em> Wonderall</em>, pero el tercer lugar es ocupado por nuevamente por Gorillaz. En el cine, sin embargo, el primer lugar también lo disputan con la misma cantidad de apariciones <em> Feel Good Inc.</em> y <em> Don´t Look Back in Anger</em>.</p>      
+        </div>
+
+        <!-- Disco único de vinilo: Song 2 saliendo de su funda fotográfica con desglose por categoría -->
+        <div class="vinyl-showcase-single" id="vinylShowcase" role="region" aria-label="Disco de Song 2, la canción más sonada en videojuegos, series y cine">
+          <article class="vinyl-card">
+            <div class="vinyl-card-top">
+              <span class="vinyl-format">Song 2 · Blur</span>
+              <span class="vinyl-rank">#1 en las 3 categorías</span>
+            </div>
+
+            <div class="vinyl-stage">
+              <div class="vinyl-stage-inner">
+                <div class="vinyl-sleeve">
+                  <div class="vinyl-sleeve-sticker" aria-hidden="true">
+                    <span class="vinyl-sleeve-band">Blur</span>
+                    <span class="vinyl-sleeve-track">Song 2</span>
+                  </div>
+                  <img
+                    class="vinyl-sleeve-img"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8-9BkbqxmID2lSF9j6BYS4HNiB0JTbFQr_RwacVbUjCyhN0EUKx1wtp0&s=10"
+                    alt="Fotografía de portada de Song 2 de Blur"
+                    referrerpolicy="no-referrer"
+                    onerror="this.style.display='none'"
+                  />
+                </div>
+                <div class="vinyl-disc-wrap" aria-hidden="true">
+                  <svg class="vinyl-disc" viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="80" cy="80" r="78" fill="#121318" stroke="#000" stroke-width="3"/>
+                    <circle cx="80" cy="80" r="68" fill="none" stroke="#2D303A" stroke-width="1"/>
+                    <circle cx="80" cy="80" r="59" fill="none" stroke="#2D303A" stroke-width="1"/>
+                    <circle cx="80" cy="80" r="50" fill="none" stroke="#2D303A" stroke-width="1"/>
+                    <circle cx="80" cy="80" r="41" fill="none" stroke="#2D303A" stroke-width="1"/>
+                    <path d="M26 44 A66 66 0 0 1 62 20" fill="none" stroke="rgba(255,255,255,0.22)" stroke-width="6" stroke-linecap="round"/>
+                    <path d="M134 116 A66 66 0 0 1 98 140" fill="none" stroke="rgba(255,255,255,0.18)" stroke-width="5" stroke-linecap="round"/>
+                    <circle cx="80" cy="80" r="30" fill="#FFE241" stroke="#000" stroke-width="2.5"/>
+                    <text x="80" y="70" text-anchor="middle" font-family="Montserrat, sans-serif" font-size="9" font-weight="900" fill="#000">BLUR</text>
+                    <text x="80" y="96" text-anchor="middle" font-family="Courier Prime, monospace" font-size="8" font-weight="700" fill="#000">SONG 2</text>
+                    <circle cx="80" cy="80" r="5.5" fill="#F5F2EA" stroke="#000" stroke-width="2"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="vinyl-meta">
+              <ul class="vinyl-breakdown-list">
+                <li class="vinyl-breakdown-item">
+                  <span class="vinyl-breakdown-cat">Videojuegos</span>
+                  <span class="vinyl-breakdown-val tabular">24 apariciones</span>
+                </li>
+                <li class="vinyl-breakdown-item">
+                  <span class="vinyl-breakdown-cat">Series</span>
+                  <span class="vinyl-breakdown-val tabular">19 apariciones</span>
+                </li>
+                <li class="vinyl-breakdown-item">
+                  <span class="vinyl-breakdown-cat">Cine</span>
+                  <span class="vinyl-breakdown-val vinyl-breakdown-val--tie tabular">Comparte el #1 en un triple empate junto a Feel Good Inc. (Gorillaz) y Don't Look Back in Anger (Oasis), con 3 apariciones cada una</span>
+                </li>
+              </ul>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- 8. SECCIÓN 5: CRÓNICA TERCERA BASE DE DATOS (GIRAS: CARRUSEL APILADO + GRÁFICO 3) -->
-    <section id="tercera-base" class="wf-section wf-section--alt">
+    <!-- 8. SECCIÓN 5: CRÓNICA TERCERA BASE DE DATOS (GIRAS: GRÁFICO 3) -->
+    <section id="tercera-base" class="wf-section wf-section--yellow">
       <div class="container">
         <div class="wf-heading-box">
-          <span class="wf-kicker">05 · Base de giras en vivo (1991–2027)</span><br/>
-          <h2 class="wf-title">Crónica tercera base de datos</h2>
+          <span class="wf-kicker">Giras mundiales</span><br/>
+          <h2 class="wf-title">El rastro sobre el escenario</h2>
         </div>
 
         <div class="reading-col">
-          <p>Si las listas de discos publicados y la presencia en pantallas inclinaron la balanza hacia Londres, el registro de las giras en vivo revela la otra mitad de la historia. A lo largo de 35 giras documentadas entre 1991 y 2027, la convocatoria sobre el escenario muestra dónde los hermanos de Mánchester mantuvieron su territorio más sólido.</p>
+          <p>Redactar crónica 3.</p>
 
-          <p>Mientras Damon Albarn y sus cuatro proyectos acumulan 18 giras con un total de 918 conciertos, los cinco proyectos ligados a Liam y Noel Gallagher concentran 1.656 conciertos repartidos en 17 giras de largo aliento, casi duplicando la presencia física en vivo del frente londinense.</p>
+          <p>Redactar crónica 3.</p>
+
+          <p>Redactar crónica 3.</p>
         </div>
 
-        <!-- Layered Stacked Carousel (Wireframe: center card + left/right peeking cards) -->
-        <div class="deck-carousel" role="region" aria-label="Carrusel de giras históricas">
-          <div class="deck-stage">
-            <div class="deck-peek deck-peek--left" id="deckLeft" role="button" tabindex="0" aria-label="Gira anterior"></div>
-            <div class="deck-main-card" id="deckMain"></div>
-            <div class="deck-peek deck-peek--right" id="deckRight" role="button" tabindex="0" aria-label="Siguiente gira"></div>
-          </div>
-          <button type="button" class="wide-arrow wide-arrow--prev" id="deckPrev" aria-label="Gira anterior" style="left:6px;">
-            <svg width="16" height="14" viewBox="0 0 16 14" fill="currentColor" aria-hidden="true"><path d="M16 6H6V2H4v2H2v2H0v2h2v2h2v2h2V8h10V6z"/></svg>
-          </button>
-          <button type="button" class="wide-arrow wide-arrow--next" id="deckNext" aria-label="Siguiente gira" style="right:6px;">
-            <svg width="16" height="14" viewBox="0 0 16 14" fill="currentColor" aria-hidden="true"><path d="M0 6h10V2h2v2h2v2h2v2h-2v2h-2v2h-2V8H0V6z"/></svg>
-          </button>
-        </div>
-
-        <div class="reading-col">
-          <p>Incluso después del quiebre de Oasis en 2009, tanto Noel Gallagher’s High Flying Birds (455 shows en cuatro giras mundiales) como Liam Gallagher en solitario (232 shows en tres giras) sostuvieron un ritmo de ruta comparable al de la etapa clásica de los años noventa, coronado por el regreso de <em>Oasis Live '25</em>.</p>
-        </div>
-
-        <!-- Gráfico tercera base (Conciertos por proyecto de base_giras.csv) -->
-        <div class="chart-plate" role="region" aria-label="Gráfico tercera base de datos: conciertos por proyecto">
+        <!-- Gráfico tercera base: Visualización de burbujas en Flourish -->
+        <div class="chart-plate" role="region" aria-label="Gráfico tercera base de datos: conciertos por banda o proyecto">
           <div class="chart-header">
             <div>
-              <div class="chart-kicker">Gráfico tercera base · 2.574 conciertos totales</div>
               <h3 class="chart-title">Sobre la carretera: cantidad de conciertos por banda o proyecto (1991–2027)</h3>
-            </div>
-            <div class="chart-controls">
-              <button type="button" class="filter-tab is-active" data-tour-sort="shows">Ordenar por conciertos</button>
-              <button type="button" class="filter-tab" data-tour-sort="tours">Ordenar por giras</button>
             </div>
           </div>
           <div class="chart-body">
-            <div class="chart-svg-wrap" id="tourChartContainer"></div>
+            <div class="flourish-embed flourish-bubble-chart" data-src="visualisation/31064780"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/31064780/thumbnail" width="100%" alt="bubble-chart visualization" /></noscript></div><div class="flourish-fallback" data-for="visualisation/31064780"><a href="https://public.flourish.studio/visualisation/31064780/visualisation.json?ref=embed-script">https://public.flourish.studio/visualisation/31064780/visualisation.json?ref=embed-script</a></div>
           </div>
         </div>
       </div>
@@ -640,14 +669,14 @@
     <section id="final" class="wf-section wf-section--paper">
       <div class="container">
         <div class="wf-heading-box">
-          <span class="wf-kicker">06 · Epílogo &amp; Moodboard</span><br/>
-          <h2 class="wf-title">Final</h2>
+          <span class="wf-kicker">Entonces...</span><br/>
+          <h2 class="wf-title">¿Esto es todo?</h2>
         </div>
 
         <div class="reading-col">
-          <p>Como es posible apreciar, esta es una carrera de largo aliento. Y la rivalidad iniciada en 1995, incluso en estos días, parece generar más preguntas que respuestas. Sin embargo, tanto en producción discográfica como en cultura popular, Albarn supone llevar la delantera hasta el momento: no necesariamente porque sus canciones sean más populares, sino porque su trayectoria se ha extendido a través de proyectos capaces de ocupar distintos espacios.</p>
+          <p>Redactar crónica final.</p>
 
-          <p>Los hermanos Gallagher, en cambio, transformaron el minimalismo frontal de Mánchester en un fenómeno de masas que sigue llenando estadios treinta años después. Londres y Mánchester no se anularon mutuamente: dibujaron las dos caras de un mismo casete.</p>
+          <p>Redactar crónica final.</p>
         </div>
 
         <div class="pull-quote-strip">
@@ -665,66 +694,14 @@
           </div>
         </div>
 
-        <!-- Imagen final + Moodboard integrado (Libro de Identidad P.3, P.8, P.9) -->
-        <div class="moodboard-grid" aria-label="Imagen final y moodboard Londres y Mánchester">
-          <!-- Panel 1: 4x Warhol Albarn / Londres -->
-          <div class="mb-tile mb-span-5" style="background:var(--red); padding:16px; color:var(--white);">
-            <div style="font-family:var(--font-display); font-weight:900; font-size:0.75rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--yellow); margin-bottom:10px;">
-              Explosividad Pop-Art · Londres
-            </div>
-            <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:8px;">
-              <div style="background:var(--yellow); border:2px solid #000; aspect-ratio:3/4; display:flex; align-items:center; justify-content:center; font-family:var(--font-display); font-weight:900; color:#1E2165; font-size:0.8rem;">BLUR</div>
-              <div style="background:var(--white); border:2px solid #000; aspect-ratio:3/4; display:flex; align-items:center; justify-content:center; font-family:var(--font-display); font-weight:900; color:#C02126; font-size:0.72rem;">GORILLAZ</div>
-              <div style="background:var(--navy); border:2px solid #000; aspect-ratio:3/4; display:flex; align-items:center; justify-content:center; font-family:var(--font-display); font-weight:900; color:#FFE241; font-size:0.75rem;">1997</div>
-              <div style="background:var(--yellow); border:2px solid #000; aspect-ratio:3/4; display:flex; align-items:center; justify-content:center; font-family:var(--font-display); font-weight:900; color:#000; font-size:0.75rem;">2026</div>
-            </div>
-            <div style="font-size:0.78rem; margin-top:10px;">
-              Repetición cromática, fanzines impresos y reinvención visual.
-            </div>
-          </div>
-
-          <!-- Panel 2: Union Jack Central Collage -->
-          <div class="mb-tile mb-span-3" style="background:var(--white); padding:16px; display:flex; flex-direction:column; justify-content:space-between; align-items:center; text-align:center;">
-            <svg width="110" height="72" viewBox="0 0 120 72" aria-hidden="true">
-              <rect width="120" height="72" fill="#1E2165"/>
-              <path d="M0 0 L120 72 M120 0 L0 72" stroke="#FFFFFF" stroke-width="12"/>
-              <path d="M0 0 L120 72 M120 0 L0 72" stroke="#C02126" stroke-width="6"/>
-              <path d="M60 0 V72 M0 36 H120" stroke="#FFFFFF" stroke-width="18"/>
-              <path d="M60 0 V72 M0 36 H120" stroke="#C02126" stroke-width="10"/>
-              <rect x="2" y="2" width="116" height="68" fill="none" stroke="#000" stroke-width="3"/>
-            </svg>
-            <div style="font-family:var(--font-display); font-weight:900; font-size:0.9rem; color:var(--navy); text-transform:uppercase; margin-top:8px;">
-              Identidad Británica ’95
-            </div>
-            <div style="font-size:0.74rem; color:var(--ink-muted);">
-              Archivo sonoro de dos ciudades
-            </div>
-          </div>
-
-          <!-- Panel 3: Manchester Minimalism / Gallagher -->
-          <div class="mb-tile mb-span-4" style="background:var(--navy); padding:16px; color:var(--white);">
-            <div style="font-family:var(--font-display); font-weight:900; font-size:0.75rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--grey); margin-bottom:10px;">
-              Minimalismo &amp; Estadios · Mánchester
-            </div>
-            <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:8px;">
-              <div style="background:var(--grey); border:2px solid #000; aspect-ratio:3/4; display:flex; align-items:center; justify-content:center; font-family:var(--font-display); font-weight:900; color:#000; font-size:0.75rem;">OASIS</div>
-              <div style="background:var(--white); border:2px solid #000; aspect-ratio:3/4; display:flex; align-items:center; justify-content:center; font-family:var(--font-display); font-weight:900; color:#1E2165; font-size:0.72rem;">NHFB</div>
-              <div style="background:var(--red); border:2px solid #000; aspect-ratio:3/4; display:flex; align-items:center; justify-content:center; font-family:var(--font-display); font-weight:900; color:#FFE241; font-size:0.75rem;">LG ’25</div>
-            </div>
-            <div style="font-size:0.78rem; margin-top:10px; color:rgba(255,255,255,0.9);">
-              Grises industriales, contraste neto y 1.656 conciertos.
-            </div>
-          </div>
-        </div>
-
-        <!-- Wireframe Bottom 2 Buttons: Damon Albarn | Los Gallagher -->
+        <!-- Wireframe Bottom 2 Buttons: Votación Damon Albarn | Los Gallagher -->
         <div style="text-align:center; margin-top:36px;">
-          <div style="font-family:var(--font-display); font-weight:900; font-size:0.8rem; text-transform:uppercase; letter-spacing:0.08em; color:var(--navy);">
-            Explora el veredicto final por bando
+          <div style="font-family:var(--font-display); font-weight:900; font-size:0.85rem; text-transform:uppercase; letter-spacing:0.08em; color:var(--navy);">
+            Después de todo lo que leíste, ¿quién crees que ha estado más presente en tu vida?
           </div>
-          <div class="final-choice-row" role="group" aria-label="Elegir resumen final">
-            <button type="button" class="key-btn key-btn--yellow is-active" data-final-choice="albarn">Damon Albarn</button>
-            <button type="button" class="key-btn key-btn--navy" data-final-choice="gallagher">Los Gallagher</button>
+          <div class="final-choice-row" role="group" aria-label="Votar quién ha estado más presente en tu vida">
+            <button type="button" class="key-btn key-btn--yellow" data-final-choice="albarn">Damon Albarn</button>
+            <button type="button" class="key-btn key-btn--navy" data-final-choice="gallagher">Los hermanos Gallagher</button>
           </div>
           <div class="final-verdict-box" id="finalVerdictBox" aria-live="polite"></div>
         </div>
@@ -739,6 +716,4 @@
       <div class="footer-credit-sub">Narración Gráfica de No Ficción 2026</div>
     </div>
   </footer>
-  </div>
-</body>
 </html>
